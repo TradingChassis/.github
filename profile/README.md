@@ -2,7 +2,7 @@
 
 **Deterministic, event-driven trading infrastructure for quantitative research and production deployment.**
 
-A modular open-source ecosystem focused on building realistic trading simulations, robust execution systems, and cloud-native research infrastructure — designed for serious financial engineering, not toy backtests.
+A modular open-source ecosystem focused on building realistic trading simulations, robust execution systems, and cloud-native research infrastructure — designed for serious financial engineering.
 
 ---
 
@@ -21,6 +21,7 @@ A modular open-source ecosystem focused on building realistic trading simulation
 ### 🧠 Trading Platform
 
 **`trading-platform`**
+
 Deterministic, event-driven trading engine for:
 
 - Strategy research & simulation
@@ -28,7 +29,8 @@ Deterministic, event-driven trading engine for:
 - Portfolio & risk management
 - Transition from backtest to production
 
-**Status:** *[early / active / stable]*
+**Status:** *active*
+
 **Primary stack:** Python, event-driven architecture
 
 ---
@@ -45,6 +47,7 @@ Infrastructure automation for quantitative research and trading workloads:
 - Secrets & configuration management
 
 **Includes:** Argo CD, MLflow, Vault, cloud tooling
+
 **Goal:** reproducible, production-grade research environments
 
 ---
@@ -75,8 +78,6 @@ Infrastructure component enabling secure secrets injection for containerized wor
 [ Research & Infrastructure Stack ]
 ```
 
-*(Replace with diagram image once available)*
-
 ---
 
 ## 🛠 Technology Stack
@@ -94,14 +95,14 @@ Infrastructure component enabling secure secrets injection for containerized wor
 ## 🚀 Project Goals
 
 - Build realistic trading simulations that match production behavior
-- Eliminate research/production divergence
+- Eliminate research / production divergence
 - Enable reproducible quantitative experimentation
 - Provide infrastructure patterns for serious trading systems
 - Emphasize correctness, determinism, and system design
 
 ---
 
-## 🗺 Roadmap (Example)
+## 🗺 Conceptual Roadmap
 
 - [ ] Core event engine stabilization
 - [ ] Portfolio & risk modeling layer
@@ -109,9 +110,7 @@ Infrastructure component enabling secure secrets injection for containerized wor
 - [ ] Strategy SDK
 - [ ] Distributed simulation support
 - [ ] Production execution connectors
-- [ ] Monitoring & observability
-
-*(Adjust over time)*
+- [ ] Improved monitoring & observability
 
 ---
 
@@ -127,16 +126,17 @@ Typical areas of interest:
 - Infrastructure automation
 - Quant research workflows
 
+Discussions are centralized in the [docs](https://github.com/trading-engineering/trading-docs) repository.
 See individual repositories for contribution guidelines.
 
 ---
 
 ## 📬 Contact & Links
 
-- Website: *[placeholder]*
-- Blog / Research notes: *[placeholder]*
-- Twitter/X: *[placeholder]*
-- Discord/Community: *[placeholder]*
+- Website: *[TBA]*
+- Blog / Research notes: *[TBA]*
+- Twitter/X: *[TBA]*
+- Discord/Community: *[TBA]*
 
 ---
 

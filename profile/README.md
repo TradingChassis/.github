@@ -2,9 +2,9 @@
 
 ---
 
-## What It Is
+## Purpose
 
-CanonicalFlow is a trading System focused on microstructure-driven Strategies. The core architectural goal is a unified conceptual model that makes Research results transferable to Live Execution: Backtesting and Live Execution share the same Runtime semantics, so a Strategy that behaves a certain way in simulation against a given Event Stream behaves the same way in production.
+CanonicalFlow is a trading System focused on microstructure-driven Strategies. The core architectural goal is a unified conceptual model that makes Research results transferable to Live: Backtesting and Live share the same Runtime semantics, so a Strategy that behaves a certain way in simulation against a given Event Stream behaves the same way in production.
 
 The System is not a general-purpose trading platform. It is an engineering-focused infrastructure project built around strict Determinism, explicit architectural boundaries, and a strong separation between canonical System semantics and their implementation-facing realizations.
 
@@ -13,29 +13,28 @@ The System is not a general-purpose trading platform. It is an engineering-focus
 ## Focus Areas
 
 - **Deterministic event-driven Runtime** — all State is a reproducible projection from a canonical Event Stream. No hidden mutable truth.
-- **Unified Research and Live semantics** — the same core processing model governs both Backtesting and Live Execution, closing the gap between Research expectations and production behavior.
+- **Unified Research and Live semantics** — the same Core governs both Backtesting and Live, closing the gap between Research expectations and production behavior.
 - **Structured data platform** — raw market data capture, validation, and canonical promotion with clear Pipeline stages and explicit provenance.
 - **Explicit architectural documentation** — architecture decisions, canonical concept definitions, and implementation-facing Stack documents maintained as a first-class engineering artifact.
 
 ---
 
-## Core Repositories
+## Repositories
 
 | Repository | Role |
 | --- | --- |
-| **Core Runtime** | The deterministic, event-driven execution engine: Event processing, State derivation, Strategy execution, Risk validation, Order lifecycle, and Venue interaction. |
-| **Data Platform** | Market data recording, validation, normalization, and canonical storage infrastructure. |
-| **Research / Backtesting** | Backtesting environment and orchestration: running the Core Runtime against historical canonical data with a simulated Venue, experiment management, and result persistence. |
-| **Infrastructure / Tooling** | Deployment, environment management, and operational tooling. |
-| **[This repository] Documentation** | Architecture knowledge base: canonical System concepts, architecture views, ADRs, implementation-facing Stack documents, and operational model. |
-
-> Repository names and exact organization are subject to project structure. The table above reflects functional categories.
+| [Core](https://github.com/CanonicalFlow/core) | The deterministic, event-driven engine: Event processing, State derivation, Strategy execution, Risk validation, Order lifecycle, and Venue interaction. |
+| [Core Runtime](https://github.com/CanonicalFlow/core-runtime) | Deployed environments for the Core for either Backtesting or Live: running the Core against either historical canonical data with a simulated Venue or live feeds with a real Venue. |
+| Data (work in progress) | Data Platform for market data recording, validation, normalization, and Canonical Storage infrastructure. |
+| [Infrastructure](https://github.com/CanonicalFlow/infrastructure) | Kubernetes deployment, environment management, and operational tooling. |
+| [Infrastructure Secrets](https://github.com/CanonicalFlow/infrastructure-secrets) | OCI Secrets management and Vault integration for mounting Kubernetes secrets via the Secrets Store CSI driver, including multi-architecture image builds. |
+| [Documentation](https://github.com/CanonicalFlow/docs) | Canonical System concepts, architecture views, ADRs, implementation-facing Stack documents, and operational model. |
 
 ---
 
 ## How the Repositories Fit Together
 
-The Data Platform produces canonical datasets from raw market feeds. The Core Runtime consumes those datasets during Backtesting and Live Execution, applying a deterministic event-driven model in both contexts. Research uses the Backtesting environment to evaluate Strategies against historical data. Live Execution applies the same Runtime semantics against live Venues with real-execution consequences.
+The Data Platform produces canonical datasets from raw market feeds. The Core Runtime consumes those datasets during Backtesting and Live, applying a deterministic event-driven model in both contexts. Research uses the Backtesting environment to evaluate Strategies against historical data. Live applies the same Runtime semantics against real Venues with real-execution consequences.
 
 The Documentation repository is the authoritative reference for how all of this is structured, why it is built the way it is, and what the canonical models mean.
 
@@ -52,8 +51,8 @@ The documentation covers:
 - **Architecture** — System structure, logical and physical views, and Architecture Decision Records
 - **Concepts** — canonical semantic models: Event, State, Time, Determinism, Order lifecycle, Queue semantics, and invariants
 - **Stacks** — implementation-facing descriptions of each subsystem (Data Recording, Data Quality, Data Storage, Backtesting, Live, Analysis, Monitoring)
-- **Operations** — operational model, monitoring, and recovery context
-- **Evolution** — roadmap and development history
+- **Operations** (work in progress) — operational model, monitoring, and recovery context
+- **Evolution** (work in progress) — roadmap and development history
 
 Concept documents are the authoritative semantic reference. Stack documents are applied implementation views that realize those concepts without redefining them.
 
@@ -61,7 +60,7 @@ Concept documents are the authoritative semantic reference. Stack documents are 
 
 ## Working Principles
 
-**Determinism is non-negotiable.** Given the same Event Stream and Configuration, the System must produce identical State at every stream position, across all Runtimes and all domains.
+**Determinism is non-negotiable.** Given the same Event Stream and Configuration, the System must produce identical State at every Event Stream position, across all Runtimes and all domains.
 
 **Events are the only source of State Transitions.** All State evolution is caused by processing canonical Events. No spontaneous updates, timer-driven branches, or out-of-band writes.
 
@@ -75,12 +74,12 @@ Concept documents are the authoritative semantic reference. Stack documents are 
 
 ## Current Status
 
-The System is under active development. The documentation repository reflects the current architectural State. Some sections — Operations and Evolution — are in progress.
+The System is under active development. The documentation repository reflects the current architectural progress, while the code repositories reflect the current implementation progress.
 
 ---
 
 ## Contributing and Contact
 
-Contributions to the documentation are welcome. See [CONTRIBUTING.md](https://github.com/CanonicalFlow/docs/blob/main/CONTRIBUTING.md) in the documentation repository for guidance.
+Contributions are welcome. See [CONTRIBUTING.md](https://github.com/CanonicalFlow/docs/blob/main/CONTRIBUTING.md) in the documentation repository for guidance.
 
 For broader project inquiries, see the organization profile or open a discussion in the relevant repository.

@@ -45,7 +45,7 @@ The Documentation repository is the authoritative reference for how all of this 
 
 The full technical documentation is maintained at:
 
-**[TradingChassis Documentation](https://canonicalflow.github.io/docs/latest/)**
+**[TradingChassis Documentation](https://tradingchassis.github.io/docs/latest/)**
 
 The documentation covers:
 

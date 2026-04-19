@@ -1,19 +1,20 @@
-# CanonicalFlow
+# TradingChassis
 
 ---
 
 ## Purpose
 
-CanonicalFlow is a trading System focused on microstructure-driven Strategies. The core architectural goal is a unified conceptual model that makes Research results transferable to Live: Backtesting and Live share the same Runtime semantics, so a Strategy that behaves a certain way in simulation against a given Event Stream behaves the same way in production.
+TradingChassis is a trading infrastructure focused on microstructure-driven Strategies. The core architectural goal is a unified conceptual model that makes Backtesting results transferable to Live: Backtesting and Live share the same Runtime semantics, so a Strategy that behaves a certain way in simulation behaves the same way in production.
 
-The System is not a general-purpose trading platform. It is an engineering-focused infrastructure project built around strict Determinism, explicit architectural boundaries, and a strong separation between canonical System semantics and their implementation-facing realizations.
+TradingChassis is an engineering-focused infrastructure project built around strict Determinism, explicit architectural boundaries, and a strong separation between canonical semantics and their implementation-facing realizations.
 
 ---
 
 ## Focus Areas
 
 - **Deterministic event-driven Runtime** — all State is a reproducible projection from a canonical Event Stream. No hidden mutable truth.
-- **Unified Research and Live semantics** — the same Core governs both Backtesting and Live, closing the gap between Research expectations and production behavior.
+- **Unified Backtesting and Live semantics** — the same Core governs both Backtesting and Live, closing the gap between simulation expectations and production behavior.
+- **Market Microstructure as Primary Market Representation** — all market views are derived from microstructure-level market representation.
 - **Structured data platform** — raw market data capture, validation, and canonical promotion with clear Pipeline stages and explicit provenance.
 - **Explicit architectural documentation** — architecture decisions, canonical concept definitions, and implementation-facing Stack documents maintained as a first-class engineering artifact.
 
@@ -23,12 +24,12 @@ The System is not a general-purpose trading platform. It is an engineering-focus
 
 | Repository | Role |
 | --- | --- |
-| [Core](https://github.com/CanonicalFlow/core) | The deterministic, event-driven engine: Event processing, State derivation, Strategy execution, Risk validation, Order lifecycle, and Venue interaction. |
-| [Core Runtime](https://github.com/CanonicalFlow/core-runtime) | Deployed environments for the Core for either Backtesting or Live: running the Core against either historical canonical data with a simulated Venue or live feeds with a real Venue. |
+| [Core](https://github.com/TradingChassis/core) | The deterministic, event-driven engine: Event processing, State derivation, Strategy execution, Risk validation, Order lifecycle, and Venue interaction. |
+| [Core Runtime](https://github.com/TradingChassis/core-runtime) | Deployed environments for the Core for either Backtesting or Live: running the Core against either historical canonical data with a simulated Venue or live feeds with a real Venue. |
 | Data (work in progress) | Data Platform for market data recording, validation, normalization, and Canonical Storage infrastructure. |
-| [Infrastructure](https://github.com/CanonicalFlow/infrastructure) | Kubernetes deployment, environment management, and operational tooling. |
-| [Infrastructure Secrets](https://github.com/CanonicalFlow/infrastructure-secrets) | OCI Secrets management and Vault integration for mounting Kubernetes secrets via the Secrets Store CSI driver, including multi-architecture image builds. |
-| [Documentation](https://github.com/CanonicalFlow/docs) | Canonical System concepts, architecture views, ADRs, implementation-facing Stack documents, and operational model. |
+| [Infrastructure](https://github.com/TradingChassis/infrastructure) | Kubernetes deployment, environment management, and operational tooling. |
+| [Infrastructure Secrets](https://github.com/TradingChassis/infrastructure-secrets) | OCI Secrets management and Vault integration for mounting Kubernetes secrets via the Secrets Store CSI driver, including multi-architecture image builds. |
+| [Documentation](https://github.com/TradingChassis/docs) | Canonical System concepts, architecture views, ADRs, implementation-facing Stack documents, and operational model. |
 
 ---
 
@@ -44,7 +45,7 @@ The Documentation repository is the authoritative reference for how all of this 
 
 The full technical documentation is maintained at:
 
-**[CanonicalFlow Documentation](https://canonicalflow.github.io/docs/latest/)**
+**[TradingChassis Documentation](https://canonicalflow.github.io/docs/latest/)**
 
 The documentation covers:
 
@@ -80,6 +81,6 @@ The System is under active development. The documentation repository reflects th
 
 ## Contributing and Contact
 
-Contributions are welcome. See [CONTRIBUTING.md](https://github.com/CanonicalFlow/docs/blob/main/CONTRIBUTING.md) in the documentation repository for guidance.
+Contributions are welcome. See [CONTRIBUTING.md](https://github.com/TradingChassis/docs/blob/main/CONTRIBUTING.md) in the documentation repository for guidance.
 
 For broader project inquiries, see the organization profile or open a discussion in the relevant repository.

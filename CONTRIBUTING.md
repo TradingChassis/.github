@@ -1,8 +1,8 @@
-# Contributing to Trading Engineering
+# Contributing
 
-Thank you for your interest in contributing to the Trading Engineering ecosystem.
+Thank you for your interest in contributing.
 
-This organization hosts multiple repositories covering trading systems, infrastructure, and tooling.  
+This organization hosts multiple repositories covering trading infrastructure and tooling.  
 Each project has its own scope, architecture, and contribution guidelines.
 
 ---
@@ -33,7 +33,7 @@ Across all projects, contributions should aim for:
 - minimal breaking changes  
 - documented behavior  
 
-Trading systems and infrastructure require high reliability — changes should reflect that.
+Trading infrastructure require high reliability — changes should reflect that.
 
 ---
 
@@ -74,7 +74,3 @@ Contributions may include:
 - documentation  
 - infrastructure tooling  
 - architectural proposals  
-
----
-
-Thank you for helping improve the Trading Engineering ecosystem.

@@ -5,7 +5,7 @@ Badges (CI, Python version, License, etc.)
 Short description in 1–3 sentences:
 
 * What is this?
-* Which layer of the overall system does it belong to?
+* Which layer of the overall infrastructure does it belong to?
 * Who is it for?
 
 ---
@@ -44,7 +44,7 @@ Solution approach:
 
 ## 🏗 Architecture Overview
 
-Describe the system in clearly separated layers.
+Describe the infrastructure in clearly separated layers.
 
 Example (generic):
 
@@ -197,8 +197,8 @@ Code → Image Build → Registry → Kubernetes → Argo Execution
 
 Clear separation between:
 
-* System storage
-* Research / scratch storage
+* Persistent storage
+* Canonical Storage
 
 Includes:
 
@@ -266,7 +266,7 @@ This section is critical for setting boundaries.
 * Quant researchers
 * Infrastructure engineers
 * GitOps practitioners
-* Engineers interested in event-driven systems
+* Engineers interested in event-driven infrastructure
 * Contributors evaluating architecture quality
 
 ---

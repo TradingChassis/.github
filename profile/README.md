@@ -29,7 +29,7 @@ TradingChassis is an engineering-focused infrastructure project built around str
 | Data (work in progress) | Data Platform for market data recording, validation, normalization, and Canonical Storage infrastructure. |
 | [Infrastructure](https://github.com/TradingChassis/infrastructure) | Kubernetes deployment, environment management, and operational tooling. |
 | [Infrastructure Secrets](https://github.com/TradingChassis/infrastructure-secrets) | OCI Secrets management and Vault integration for mounting Kubernetes secrets via the Secrets Store CSI driver, including multi-architecture image builds. |
-| [Documentation](https://github.com/TradingChassis/docs) | Canonical System concepts, architecture views, ADRs, implementation-facing Stack documents, and operational model. |
+| [Documentation](https://github.com/TradingChassis/docs) | Infrastructure concepts, architecture views, ADRs, implementation-facing Stack documents, and operational model. |
 
 ---
 
@@ -49,9 +49,9 @@ The full technical documentation is maintained at:
 
 The documentation covers:
 
-- **Architecture** — System structure, logical and physical views, and Architecture Decision Records
+- **Architecture** — Structure, logical and physical views, and Architecture Decision Records
 - **Concepts** — canonical semantic models: Event, State, Time, Determinism, Order lifecycle, Queue semantics, and invariants
-- **Stacks** — implementation-facing descriptions of each subsystem (Data Recording, Data Quality, Data Storage, Backtesting, Live, Analysis, Monitoring)
+- **Stacks** — implementation-facing descriptions of each Stack (Data Recording, Data Quality, Data Storage, Backtesting, Live, Analysis, Monitoring)
 - **Operations** (work in progress) — operational model, monitoring, and recovery context
 - **Evolution** (work in progress) — roadmap and development history
 
@@ -61,7 +61,7 @@ Concept documents are the authoritative semantic reference. Stack documents are 
 
 ## Working Principles
 
-**Determinism is non-negotiable.** Given the same Event Stream and Configuration, the System must produce identical State at every Event Stream position, across all Runtimes and all domains.
+**Determinism is non-negotiable.** Given the same Event Stream and Configuration, the Infrastructure must produce identical State at every Event Stream position, across all Runtimes and all domains.
 
 **Events are the only source of State Transitions.** All State evolution is caused by processing canonical Events. No spontaneous updates, timer-driven branches, or out-of-band writes.
 
@@ -75,7 +75,7 @@ Concept documents are the authoritative semantic reference. Stack documents are 
 
 ## Current Status
 
-The System is under active development. The documentation repository reflects the current architectural progress, while the code repositories reflect the current implementation progress.
+This infrastructure is under active development. The documentation repository reflects the current architectural progress, while the code repositories reflect the current implementation progress.
 
 ---
 

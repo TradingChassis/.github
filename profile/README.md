@@ -4,7 +4,7 @@
 
 ## Purpose
 
-TradingChassis is a trading infrastructure focused on microstructure-driven Strategies. The core architectural goal is a unified conceptual model that makes Backtesting results transferable to Live: Backtesting and Live share the same Runtime semantics, so a Strategy that behaves a certain way in simulation behaves the same way in production.
+TradingChassis is a trading infrastructure focused on microstructure-driven Strategies. The core architectural goal is a unified conceptual model that makes Backtesting results transferable to Live: Backtesting and Live share the same Runtime semantics, so a Strategy's behavior in simulation aligns with its behavior in production as closely as possible.
 
 TradingChassis is an engineering-focused infrastructure project built around strict Determinism, explicit architectural boundaries, and a strong separation between canonical semantics and their implementation-facing realizations.
 
@@ -13,7 +13,7 @@ TradingChassis is an engineering-focused infrastructure project built around str
 ## Focus Areas
 
 - **Deterministic event-driven Runtime** — all State is a reproducible projection from a canonical Event Stream. No hidden mutable truth.
-- **Unified Backtesting and Live semantics** — the same Core governs both Backtesting and Live, closing the gap between simulation expectations and production behavior.
+- **Unified Backtesting and Live semantics** — the same Core governs both Backtesting and Live, aligning simulation behavior with production behavior as closely as possible.
 - **Market Microstructure as Primary Market Representation** — all market views are derived from microstructure-level market representation.
 - **Structured data platform** — raw market data capture, validation, and canonical promotion with clear Pipeline stages and explicit provenance.
 - **Explicit architectural documentation** — architecture decisions, canonical concept definitions, and implementation-facing Stack documents maintained as a first-class engineering artifact.

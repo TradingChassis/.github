@@ -53,7 +53,7 @@ The documentation covers:
 - **Concepts** — canonical semantic models: Event, State, Time, Determinism, Order lifecycle, Queue semantics, and invariants
 - **Stacks** — implementation-facing descriptions of each Stack (Data Recording, Data Quality, Data Storage, Backtesting, Live, Analysis, Monitoring)
 - **Operations** (work in progress) — operational model, monitoring, and recovery context
-- **Evolution** (work in progress) — roadmap and development history
+- **Evolution** — roadmap, milestones and development logs
 
 Concept documents are the authoritative semantic reference. Stack documents are applied implementation views that realize those concepts without redefining them.
 

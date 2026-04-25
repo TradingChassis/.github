@@ -6,6 +6,8 @@ TradingChassis is an open-source trading infrastructure project for building pro
 
 The goal is not to provide another trading bot or Strategy collection. The goal is to build the infrastructure discipline required to make trading systems consistent, explainable, maintainable, and operationally reliable.
 
+> **Terminology note:** This README follows the [TradingChassis terminology](https://tradingchassis.github.io/docs/latest/00-guides/terminology/). Capitalized terms are used according to the canonical definitions in the documentation.
+
 ---
 
 ## Why TradingChassis Exists
@@ -44,7 +46,7 @@ Data, Configuration, code, runtime context, and results should be traceable enou
 - **Auditability by design**  
 Important decisions and State Transitions should be reconstructible from canonical inputs, not inferred from scattered logs or hidden runtime state.
 - **Observability and Operations**  
-Logging, metrics, monitoring, Runbooks, operational procedures, and recovery context are part of the Infrastructure, not an afterthought.
+Logging, metrics, monitoring, Runbooks, operational procedures, and recovery context are part of the infrastructure, not an afterthought.
 - **Scalable orchestration**  
 The project is designed with deployment, environment management, Kubernetes, GitOps-style workflows, secret management, and operational boundaries in mind.
 - **Explicit architecture documentation**  
@@ -79,8 +81,6 @@ flowchart TD
     S --> T[Monitoring & Operations]
     T --> U[Runbooks & Recovery Context]
 ```
-
-
 
 The diagram is intentionally high-level. The Documentation repository defines the canonical terms and the detailed architecture.
 
@@ -177,10 +177,10 @@ The Core repository defines the deterministic semantics for Event processing, St
 
 The Core Runtime repository provides environments in which the Core can run across Backtesting and Live contexts. 
 
-The Infrastructure repositories provide deployment, orchestration, secrets, and operational foundations. 
+The infrastructure repositories provide deployment, orchestration, secrets, and operational foundations. 
 
 The Documentation repository defines the conceptual and architectural model that keeps these pieces aligned.
-It is not secondary material, but part of the Infrastructure.
+It is not secondary material, but part of the infrastructure.
 
 ---
 
@@ -198,7 +198,7 @@ The documentation covers:
 - **Operations** (work in progress) — operational monitoring, runbooks, recovery context, and maintenance procedures
 - **Evolution** — roadmap, milestones, development logs, and architectural progress
 
-Concept documents define semantics. Stack documents explain how those semantics are realized. Operations documents explain how the Infrastructure is used, maintained, monitored, and recovered.
+Concept documents define semantics. Stack documents explain how those semantics are realized. Operations documents explain how the infrastructure is used, maintained, monitored, and recovered.
 
 ---
 
@@ -212,7 +212,7 @@ A Strategy is only one Component in a larger system. Data quality, deterministic
 
 ### Determinism is non-negotiable
 
-Given the same Event Stream and the same Configuration, the Infrastructure must derive the same State at every Processing Order position.
+Given the same Event Stream and the same Configuration, the infrastructure must derive the same State at every Processing Order position.
 
 Runtime behavior must not depend on hidden mutable truths, wall-clock side effects, scheduler timing, or uncontrolled concurrency.
 
@@ -240,7 +240,7 @@ Logs, metrics, monitoring, audit trails, and run metadata are not afterthoughts.
 
 ### Operations are part of the product
 
-Runbooks, recovery procedures, deployment models, secret management, monitoring, and operational boundaries are part of the Infrastructure.
+Runbooks, recovery procedures, deployment models, secret management, monitoring, and operational boundaries are part of the infrastructure.
 
 A trading system is not complete just because it can run. It must also be maintainable, observable, recoverable, and explainable.
 
@@ -266,6 +266,6 @@ The project is intentionally architecture-first and infrastructure-first.
 
 Contributions, feedback, and technical discussion are welcome, especially around trading infrastructure, deterministic systems, market data, Research-to-Production workflows, observability, reproducibility, and operations.
 
-See [CONTRIBUTING.md](https://github.com/TradingChassis/docs/blob/main/CONTRIBUTING.md) in the Documentation repository for contribution guidance.
+See [CONTRIBUTING.md](https://github.com/TradingChassis/.github/blob/main/CONTRIBUTING.md) in the Documentation repository for contribution guidance.
 
 For broader project inquiries, use the relevant repository discussions or issues.

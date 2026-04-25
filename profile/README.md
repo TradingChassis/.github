@@ -95,7 +95,7 @@ TradingChassis is:
 - an operational foundation for professional trading systems
 - a modular infrastructure project with explicit Stack boundaries
 - a documentation-heavy engineering project
-- an attempt to make professional trading infrastructure discipline available in open source
+- an attempt to make professional trading infrastructure discipline available in open-source
 
 ---
 

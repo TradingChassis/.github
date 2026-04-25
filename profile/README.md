@@ -1,7 +1,5 @@
 # TradingChassis
 
-Open-source infrastructure for deterministic, reproducible, observable, and auditable trading systems.
-
 TradingChassis is an open-source trading infrastructure project for building professional Research-to-Production trading systems. It focuses on the infrastructure layer that trading firms usually build internally: canonical data flows, deterministic Event processing, versioned Configuration, reproducible Research, audit trails, structured logging, monitoring, Operations, scalable orchestration, and explicit architecture documentation.
 
 The goal is not to provide another trading bot or Strategy collection. The goal is to build the infrastructure discipline required to make trading systems consistent, explainable, maintainable, and operationally reliable.

@@ -10,7 +10,7 @@ The goal is not to provide another trading bot or Strategy collection. The goal 
 
 ---
 
-## Why TradingChassis Exists
+## 🎯 Why TradingChassis Exists
 
 Successful trading systems are not only about Strategy logic.
 
@@ -31,7 +31,7 @@ It aims to provide the kind of Research-to-Production foundation that profession
 
 ---
 
-## What TradingChassis Builds
+## 🏗️ What TradingChassis Builds
 
 TradingChassis is organized around a few core infrastructure concerns:
 
@@ -54,7 +54,7 @@ Architecture, concepts, ADRs, Stack documents, and operational models are mainta
 
 ---
 
-## Infrastructure Workflow
+## 🔁 Infrastructure Workflow
 
 ```mermaid
 flowchart TD
@@ -86,7 +86,7 @@ The diagram is intentionally high-level. The Documentation repository defines th
 
 ---
 
-## What This Is
+## ✅ What This Is
 
 TradingChassis is:
 
@@ -101,7 +101,7 @@ TradingChassis is:
 
 ---
 
-## What This Is Not
+## 🚫 What This Is Not
 
 TradingChassis is not:
 
@@ -118,7 +118,7 @@ The project is intentionally focused on infrastructure, not on selling Strategie
 
 ---
 
-## Who This Is For
+## 👥 Who This Is For
 
 TradingChassis is intended for people interested in the infrastructure behind systematic trading systems:
 
@@ -136,7 +136,7 @@ It is especially relevant if you think the hard part is not only testing a Strat
 
 ---
 
-## Who This Is Not For
+## 🚫👥 Who This Is Not For
 
 TradingChassis is not the right starting point if you are looking for:
 
@@ -152,7 +152,7 @@ The project deliberately exposes architecture, semantics, and operational bounda
 
 ---
 
-## Repositories
+## 📦 Repositories
 
 
 | Repository                                                                         | Role                                                                                                                                                                                                                 |
@@ -167,7 +167,7 @@ The project deliberately exposes architecture, semantics, and operational bounda
 
 ---
 
-## How the Repositories Fit Together
+## 🧩 How the Repositories Fit Together
 
 TradingChassis is structured as a set of related infrastructure repositories rather than a single monolithic application.
 
@@ -184,7 +184,7 @@ It is not secondary material, but part of the infrastructure.
 
 ---
 
-## Documentation
+## 📚 Documentation
 
 The full technical documentation is maintained at:
 
@@ -202,7 +202,7 @@ Concept documents define semantics. Stack documents explain how those semantics 
 
 ---
 
-## Working Principles
+## 🧠 Working Principles
 
 ### Infrastructure before Strategy shortcuts
 
@@ -252,7 +252,7 @@ Architecture documents, ADRs, concept definitions, Stack documents, and operatio
 
 ---
 
-## Current Status
+## 🚧 Current Status
 
 TradingChassis is under active development.
 
@@ -262,7 +262,7 @@ The project is intentionally architecture-first and infrastructure-first.
 
 ---
 
-## Contributing and Contact
+## 🤝 Contributing and Contact
 
 Contributions, feedback, and technical discussion are welcome, especially around trading infrastructure, deterministic systems, market data, Research-to-Production workflows, observability, reproducibility, and operations.
 

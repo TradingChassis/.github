@@ -7,7 +7,7 @@ Each project has its own scope, architecture, and contribution guidelines.
 
 ---
 
-## 📌 Repository-Specific Guidelines
+## Repository-Specific Guidelines
 
 Before contributing, always review the `CONTRIBUTING.md` file inside the target repository.
 
@@ -23,7 +23,7 @@ Repository-specific rules take precedence over this general guide.
 
 ---
 
-## 🧭 General Contribution Principles
+## General Contribution Principles
 
 Across all projects, contributions should aim for:
 
@@ -33,11 +33,11 @@ Across all projects, contributions should aim for:
 - minimal breaking changes  
 - documented behavior  
 
-Trading infrastructure require high reliability — changes should reflect that.
+Trading infrastructure requires high reliability — changes should reflect that.
 
 ---
 
-## 🔧 Typical Workflow
+## Typical Workflow
 
 1. Fork the repository  
 2. Create a feature or fix branch  
@@ -47,7 +47,7 @@ Trading infrastructure require high reliability — changes should reflect that.
 
 ---
 
-## 📣 Discussions & Proposals
+## Discussions & Proposals
 
 For larger changes or architectural topics:
 
@@ -57,14 +57,14 @@ For larger changes or architectural topics:
 
 ---
 
-## 🔐 Security Issues
+## Security Issues
 
 If a repository contains a `SECURITY.md`, follow the instructions there.  
 Otherwise, avoid disclosing vulnerabilities publicly.
 
 ---
 
-## 🙌 Contribution Scope
+## Contribution Scope
 
 Contributions may include:
 

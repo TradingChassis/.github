@@ -113,16 +113,17 @@ It deliberately exposes architecture, semantics, and operational boundaries.
 
 ## 👥 Who This Is For
 
-TradingChassis is intended for people interested in infrastructure behind systematic trading:
+TradingChassis is intended for:
 
-- Trading infrastructure Engineers
-- systematic traders with strong engineering background
-- Data Platform Engineers working with market data
-- engineers interested in market microstructure
-- engineers interested in deterministic Event-driven systems
-- people working on reproducible Research-to-Production workflows
+- trading infrastructure engineers
+- traders with strong engineering background
+- people working with
+    - market data
+    - market microstructure
+    - deterministic systems
+    - reproducible workflows
 
-It is especially relevant if the hard part is not only testing a Strategy once, but building around it: data, State, execution semantics, observability, auditability, reproducibility, deployment, operations.
+It is especially relevant for not only testing a trading Strategy once, but building around it: data, State, execution semantics, observability, auditability, reproducibility, deployment, operations.
 
 ---
 

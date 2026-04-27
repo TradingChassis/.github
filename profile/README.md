@@ -99,27 +99,14 @@ TradingChassis is:
 
 TradingChassis is not:
 
-- a trading bot
-- a signal library
-- a Strategy marketplace
+- a signal or Strategy library
 - a plug-and-play exchange bot
-- a retail algo-trading starter kit
-- a collection of profitable Strategies
 - a promise of trading performance
 - a notebook-only Backtesting framework
-
-
-And is not the right starting point for:
-
-- a ready-made retail trading bot
-- a simple “connect exchange and trade” script
-- copy-paste Strategies
-- buy/sell signals
 - a beginner-friendly algo-trading course
 - a quick way to automate discretionary trades
-- a black-box system that hides architecture and operational details
 
-This project is intentionally focused on infrastructure, not on selling Strategies or simplifying trading into buy/sell signals.
+This project is intentionally focused on infrastructure, not on selling Strategies or simplifying trading into buy/sell signals.  
 It deliberately exposes architecture, semantics, and operational boundaries.
 
 ---
@@ -128,8 +115,6 @@ It deliberately exposes architecture, semantics, and operational boundaries.
 
 TradingChassis is intended for people interested in infrastructure behind systematic trading:
 
-- Quantitative Developers
-- Research Engineers
 - Trading infrastructure Engineers
 - systematic traders with strong engineering background
 - Data Platform Engineers working with market data

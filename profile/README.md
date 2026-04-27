@@ -150,6 +150,8 @@ It is especially relevant for not only testing a trading Strategy once, but buil
 
 ## 📦 Repositories
 
+TradingChassis is structured as a set of related infrastructure repositories rather than a single monolithic application:
+
 | Repository | Role |
 | ----------------- | ----------------- |
 | [Core](https://github.com/TradingChassis/core) | The deterministic Event-driven engine. It applies the Event Stream, derives State, invokes Strategy, applies Risk, and runs Execution Control as part of Event processing. |
@@ -158,19 +160,6 @@ It is especially relevant for not only testing a trading Strategy once, but buil
 | [Infrastructure](https://github.com/TradingChassis/infrastructure) | Kubernetes deployment, environment management, orchestration, and operational tooling for running infrastructure Components. |
 | [Infrastructure Secrets](https://github.com/TradingChassis/infrastructure-secrets) | Secret management and Vault integration for Kubernetes-based environments, including OCI secrets and Secrets Store CSI integration. |
 | [Documentation](https://github.com/TradingChassis/docs) | The authoritative reference for architecture, canonical concepts, ADRs, Stack documents, operations, and project evolution. |
-
-TradingChassis is structured as a set of related infrastructure repositories rather than a single monolithic application.
-
-The **Core** repository defines the deterministic semantics for Event processing, State derivation, Strategy evaluation, Risk, Execution Control, and Venue interaction. 
-
-The **Core Runtime** repository provides environments in which the Core can run across Backtesting and Live contexts. 
-
-<!-- The **Data** repository records and promotes market data into canonical forms.  -->
-
-The **Infrastructure** repositories provide deployment, orchestration, secrets, and operational foundations. 
-
-The **Documentation** repository defines the conceptual and architectural model that keeps these pieces aligned.
-It is not secondary material, but part of the infrastructure.
 
 ---
 

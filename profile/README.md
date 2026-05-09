@@ -10,7 +10,7 @@ A trading project may focus on an isolated part: Strategy logic, Backtesting, ex
 
 This project uses some of these isolated parts, while adding its own integration to form a coherent infrastructure. It is production-like but not fully production-grade; it is a solo-maintained setup built to approximate professional standards.
 
-> **Terminology note:** This README follows the [TradingChassis terminology](https://tradingchassis.github.io/docs/latest/00-guides/terminology/). Capitalized terms are used according to the canonical definitions in the documentation.
+> **Terminology note:** This README follows the terminology used in the [main documentation](#documentation).
 
 <img src="https://img.spacergif.org/spacer.gif" width="1" height="32"/>
 

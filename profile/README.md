@@ -57,17 +57,6 @@ TradingChassis is intended for:
 
 It is especially relevant for not only testing a trading Strategy once, but building around it: data, State, execution semantics, observability, auditability, reproducibility, deployment, operations.
 
-
-
-
-
-
-
-
-
-
-
-
 <img src="https://img.spacergif.org/spacer.gif" width="1" height="32"/>
 
 ## Infrastructure Workflow
@@ -129,7 +118,7 @@ TradingChassis is structured as a set of related infrastructure repositories rat
 
 <img src="https://img.spacergif.org/spacer.gif" width="1" height="32"/>
 
-## <h2 id="documentation">📚 Documentation</h2>
+## Documentation
 
 The full technical documentation is maintained at:
 

@@ -1,7 +1,7 @@
 # TradingChassis
 
 <p align="center">
-  <strong>Trading infrastructure for small-scaled professional-adjacent Research-to-Production systems</strong>
+  <strong>Open-source trading infrastructure project for building small-scaled professional-adjacent Research-to-Production trading systems</strong>
 </p>
 
 TradingChassis is an open-source trading infrastructure project for building small-scaled professional-adjacent Research-to-Production trading systems.

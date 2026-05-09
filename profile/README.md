@@ -1,9 +1,5 @@
 # TradingChassis
 
-<p align="center">
-  <strong>Open-source trading infrastructure project for building small-scaled professional-adjacent Research-to-Production trading systems</strong>
-</p>
-
 TradingChassis is an open-source trading infrastructure project for building small-scaled professional-adjacent Research-to-Production trading systems.
 
 It addresses infrastructure problems that arise when building such systems: data pipelines, deterministic Event processing, versioned Configuration, reproducible Research, audit trails, structured logging, monitoring, Operations, scalable orchestration, explicit architecture documentation. The goal is not to provide another trading bot or Strategy collection, but rather to approach the infrastructure discipline required to make trading consistent, explainable, maintainable, and operationally reliable.

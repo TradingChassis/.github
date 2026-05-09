@@ -10,7 +10,7 @@ It addresses infrastructure problems that arise when building such systems: data
 
 Successful trading is not only about Strategy logic. It depends on the surrounding infrastructure: how market data is captured and promoted, how Events are ordered, how State is derived, how Configuration is versioned, how Research results are reproduced, how Live behavior is monitored, how operational failures are investigated, how trading can be audited after the fact.
 
-Many trading projects focus on isolated parts:
+A trading project may focus on an isolated part:
 
 | Isolated part         |
 | --------------------- |
@@ -59,11 +59,6 @@ TradingChassis is intended for:
 
 It is especially relevant for not only testing a trading Strategy once, but building around it: data, State, execution semantics, observability, auditability, reproducibility, deployment, operations.
 
-
-
-
-
-
 <img src="https://img.spacergif.org/spacer.gif" width="1" height="32"/>
 
 ## Infrastructure Workflow
@@ -84,8 +79,8 @@ flowchart TD
     end
 
     subgraph Core[Shared Core Semantics]
-        F --> H[Shared Core Semantics]
-        G --> H
+        F --> I
+        G --> I
 
         H --> I[State = Event Stream + Configuration]
         I --> K[Strategy]
@@ -101,7 +96,7 @@ flowchart TD
     subgraph Observability[Auditability, Analysis & Operations]
         I --> Q[Audit Trails]
         Q --> R[Analysis]
-        H --> S[Logging & Metrics]
+        Q --> S[Logging & Metrics]
         S --> T[Monitoring & Operations]
         T --> U[Runbooks & Recovery Context]
     end
@@ -116,11 +111,11 @@ TradingChassis is structured as a set of related infrastructure repositories rat
 | Repository | Role |
 | ---------- | ---- |
 | [Documentation](https://github.com/TradingChassis/docs) | The authoritative reference for architecture, canonical concepts, ADRs, Stack documents, operations, and project evolution. |
-| [Core](https://github.com/TradingChassis/core)                                     | The deterministic Event-driven engine. It applies the Event Stream, derives State, invokes Strategy, applies Risk, and runs Execution Control as part of Event processing.                                                                          |
-| [Core Runtime](https://github.com/TradingChassis/core-runtime)                     | Runtime environments for running the Core in Backtesting and Live contexts. Runtimes share the same semantic model while differing in data sources, Venue implementation, and surrounding infrastructure. Live Runtime support is work in progress. |
-| [Infrastructure](https://github.com/TradingChassis/infrastructure)                 | Kubernetes deployment, environment management, orchestration, and operational tooling for running infrastructure Components.                                                                                                                        |
-| [Infrastructure Secrets](https://github.com/TradingChassis/infrastructure-secrets) | Secret management and Vault integration for Kubernetes-based environments, including OCI secrets and Secrets Store CSI integration.                                                                                                                 |
-| Data                                                                               | Data infrastructure for recording raw market data, validation, normalization, promotion, and provenance. This repository is work in progress.                                                                                                       |
+| [Core](https://github.com/TradingChassis/core) | The deterministic Event-driven engine. It applies the Event Stream, derives State, invokes Strategy, applies Risk, and runs Execution Control as part of Event processing.                                                                          |
+| [Core Runtime](https://github.com/TradingChassis/core-runtime) | Runtime environments for running the Core in Backtesting and Live contexts. Runtimes share the same semantic model while differing in data sources, Venue implementation, and surrounding infrastructure. Live Runtime support is work in progress. |
+| [Infrastructure](https://github.com/TradingChassis/infrastructure) | Kubernetes deployment, environment management, orchestration, and operational tooling for running infrastructure Components. |
+| [Infrastructure Secrets](https://github.com/TradingChassis/infrastructure-secrets) | Secret management and Vault integration for Kubernetes-based environments, including OCI secrets and Secrets Store CSI integration. |
+| Data| Data infrastructure for recording raw market data, validation, normalization, promotion, and provenance. This repository is work in progress. |
 
 <img src="https://img.spacergif.org/spacer.gif" width="1" height="32"/>
 
@@ -132,13 +127,13 @@ The full technical documentation is maintained at:
 
 The documentation covers:
 
-| Area             | Description                                                                                                                                               |
-| ---------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Architecture** | structure, logical and physical views, and Architecture Decision Records                                                                                  |
-| **Concepts**     | canonical semantic models such as Event, Event Stream, Configuration, State, Determinism, Intent, Risk, Execution Control, Order, Runtime, and Invariants |
-| **Stacks**       | implementation-facing views of infrastructure areas such as Data Recording, Data Quality, Data Storage, Backtesting, Live, Analysis, and Monitoring       |
-| **Operations**   | operational monitoring, runbooks, recovery context, and maintenance procedures. This navigation is work in progress.                                      |
-| **Evolution**    | roadmap, milestones, development logs, and architectural progress                                                                                         |
+| Area             | Description                                                                                                                                                |
+| ---------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Architecture** | Structure, logical and physical views, and Architecture Decision Records.                                                                                  |
+| **Concepts**     | Canonical semantic models such as Event, Event Stream, Configuration, State, Determinism, Intent, Risk, Execution Control, Order, Runtime, and Invariants. |
+| **Stacks**       | Implementation-facing views of infrastructure areas such as Data Recording, Data Quality, Data Storage, Backtesting, Live, Analysis, and Monitoring.       |
+| **Operations**   | Operational monitoring, runbooks, recovery context, and maintenance procedures. This navigation is work in progress.                                       |
+| **Evolution**    | Roadmap, milestones, development logs, and architectural progress.                                                                                         |
 
 Concept documents define semantics. Stack documents explain how those semantics are realized. Operations documents explain how the infrastructure is used, maintained, monitored, and recovered.
 
@@ -150,7 +145,7 @@ TradingChassis is organized around the following infrastructure concerns and wor
 
 ### Infrastructure Concerns
 
-| Concern                                 | What it means                                                                                                                                                                             |
+| Concern                                 | What it means |
 | --------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **Deterministic Event processing**      | State is derived from an Event Stream under Configuration. There is no hidden mutable truth.                                                                                              |
 | **Canonical data flows**                | Raw market data is recorded, validated, normalized, and promoted into canonical forms before it is used by Research, Backtesting, Analysis, or Live systems.                              |

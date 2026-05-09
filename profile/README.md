@@ -144,41 +144,29 @@ TradingChassis is organized around the following infrastructure concerns and wor
 
 ### Infrastructure Concerns
 
-- **Deterministic Event processing**  
-  State is derived from an Event Stream under Configuration. No hidden mutable truth.
-- **Canonical data flows**  
-  Raw market data is recorded, validated, normalized, and promoted into canonical forms before it is used by Research, Backtesting, Analysis, or Live systems.
-- **Research-to-Production continuity**  
-  Research, Backtesting, Analysis, and Live operation should not be disconnected worlds with different assumptions. They should be different usage contexts of one coherent infrastructure.
-- **Versioning and reproducibility**  
-  Data, Configuration, code, runtime context, and results should be traceable enough to explain what was run, why it behaved as it did, and how it can be reproduced.
-- **Auditability by design**  
-  Important decisions and State Transitions should be reconstructible from canonical inputs, not inferred from scattered logs or hidden runtime state.
-- **Observability and Operations**  
-  Logging, metrics, monitoring, Runbooks, operational procedures, and recovery context are part of the infrastructure.
-- **Scalable orchestration**  
-  The project is designed with deployment, environment management, Kubernetes, GitOps-style workflows, secret management, and operational boundaries in mind.
-- **Explicit architecture documentation**  
-  Architecture, concepts, ADRs, Stack documents, and operational models are maintained as first-class engineering artifacts.
+| Concern | What it means |
+| --- | --- |
+| **Deterministic Event processing** | State is derived from an Event Stream under Configuration. There is no hidden mutable truth. |
+| **Canonical data flows** | Raw market data is recorded, validated, normalized, and promoted into canonical forms before it is used by Research, Backtesting, Analysis, or Live systems. |
+| **Research-to-Production continuity** | Research, Backtesting, Analysis, and Live operation should not be disconnected worlds with different assumptions. They should be different usage contexts of one coherent infrastructure. |
+| **Versioning and reproducibility** | Data, Configuration, code, runtime context, and results should be traceable enough to explain what was run, why it behaved as it did, and how it can be reproduced. |
+| **Auditability by design** | Important decisions and State Transitions should be reconstructible from canonical inputs, not inferred from scattered logs or hidden runtime state. |
+| **Observability and Operations** | Logging, metrics, monitoring, Runbooks, operational procedures, and recovery context are part of the infrastructure. |
+| **Scalable orchestration** | Deployment, environment management, Kubernetes, GitOps-style workflows, secret management, and operational boundaries are treated as infrastructure concerns. |
+| **Explicit architecture documentation** | Architecture, concepts, ADRs, Stack documents, and operational models are maintained as first-class engineering artifacts. |
 
 ### Working Principles
 
-- **Infrastructure before Strategy shortcuts**  
-  Professional trading requires infrastructure discipline before Strategy convenience. A Strategy is only one Component in a larger system; data quality, deterministic processing, reproducibility, observability, auditability, and deployment are equally important.
-- **Determinism is non-negotiable**  
-  Given the same Event Stream and the same Configuration, the infrastructure must derive the same State at every Processing Order position. Runtime behavior must not depend on hidden mutable truths, wall-clock side effects, scheduler timing, or uncontrolled concurrency.
-- **Events are the source of State Transitions**  
-  State changes only through Events processed under Configuration. State is not an independent source of truth, but a deterministic projection from canonical inputs.
-- **Canonical semantics come before implementation details**  
-  Core concepts such as Event, Event Stream, Configuration, State, Intent, Risk, Execution Control, Order, Runtime, Stack, and Component are defined explicitly. Implementations realize these concepts; they do not redefine them locally.
-- **Backtesting and Live belong to one infrastructure**  
-  Backtesting is part of Research. Live is a different operational context, not a different conceptual universe. The goal is to reduce structural divergence between Research, Backtesting, Analysis, and Live by making them depend on shared infrastructure semantics.
-- **Observability and auditability are design requirements**  
-  Logs, metrics, monitoring, audit trails, and run metadata are required for understanding, debugging, reproducing, and operating.
-- **Operations are part of the infrastructure**  
-  Runbooks, recovery procedures, deployment models, secret management, monitoring, and operational boundaries are part of the infrastructure. Trading must also be maintainable, observable, recoverable, and explainable.
-- **Architecture is a first-class artifact**  
-  TradingChassis documents not only what is implemented, but why it is structured this way. Architecture documents, ADRs, concept definitions, Stack documents, and operational documentation are maintained with the same seriousness as code.
+| Principle | What it means |
+| --- | --- |
+| **Architecture is a first-class artifact** | TradingChassis documents not only what is implemented, but why it is structured this way. Architecture documents, ADRs, concept definitions, Stack documents, and operational documentation are maintained with the same seriousness as code. |
+| **Infrastructure before Strategy shortcuts** | Professional trading requires infrastructure discipline before Strategy convenience. A Strategy is only one Component in a larger system; data quality, deterministic processing, reproducibility, observability, auditability, and deployment are equally important. |
+| **Determinism is non-negotiable** | Given the same Event Stream and the same Configuration, the infrastructure must derive the same State at every Processing Order position. Runtime behavior must not depend on hidden mutable truths, wall-clock side effects, scheduler timing, or uncontrolled concurrency. |
+| **Events are the source of State Transitions** | State changes only through Events processed under Configuration. State is not an independent source of truth, but a deterministic projection from canonical inputs. |
+| **Canonical semantics come before implementation details** | Core concepts such as Event, Event Stream, Configuration, State, Intent, Risk, Execution Control, Order, Runtime, Stack, and Component are defined explicitly. Implementations realize these concepts; they do not redefine them locally. |
+| **Backtesting and Live belong to one infrastructure** | Backtesting is part of Research. Live is a different operational context, but not a different conceptual universe. The goal is to reduce structural divergence between Backtesting and Live by making them depend on shared infrastructure semantics. |
+| **Observability and auditability are design requirements** | Logs, metrics, monitoring, audit trails, and run metadata are required for understanding, debugging, reproducing, and operating. |
+| **Operations are part of the infrastructure** | Runbooks, recovery procedures, deployment models, secret management, monitoring, and operational boundaries are part of the infrastructure. Trading must also be maintainable, observable, recoverable, and explainable. |
 
 
 <img src="https://img.spacergif.org/spacer.gif" width="1" height="32"/>

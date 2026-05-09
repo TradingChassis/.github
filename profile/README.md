@@ -109,9 +109,10 @@ TradingChassis is structured as a set of related infrastructure repositories rat
 | [Documentation](https://github.com/TradingChassis/docs) | The authoritative reference for architecture, canonical concepts, ADRs, Stack documents, operations, and project evolution. |
 | [Core](https://github.com/TradingChassis/core) | The deterministic Event-driven engine. It applies the Event Stream, derives State, invokes Strategy, applies Risk, and runs Execution Control as part of Event processing. |
 | [Core Runtime](https://github.com/TradingChassis/core-runtime) | Runtime environments for running the Core in Backtesting and Live contexts. Runtimes share the same semantic model while differing in data sources, Venue implementation, and surrounding infrastructure. Live Runtime support is work in progress. |
-<!-- | Data | Data infrastructure for recording raw market data, validation, normalization, promotion, and provenance. This repository is work in progress. | -->
 | [Infrastructure](https://github.com/TradingChassis/infrastructure) | Kubernetes deployment, environment management, orchestration, and operational tooling for running infrastructure Components. |
 | [Infrastructure Secrets](https://github.com/TradingChassis/infrastructure-secrets) | Secret management and Vault integration for Kubernetes-based environments, including OCI secrets and Secrets Store CSI integration. |
+
+<!-- | Data | Data infrastructure for recording raw market data, validation, normalization, promotion, and provenance. This repository is work in progress. | -->
 
 
 <img src="https://img.spacergif.org/spacer.gif" width="1" height="32"/>

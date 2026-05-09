@@ -67,37 +67,40 @@ This diagram is intentionally high-level. It shows how infrastructure fits toget
 
 ```mermaid
 flowchart TD
-    subgraph Data[Data]
+    subgraph DATA[Data]
         A[Raw Market Data] --> B[Validation & Normalization]
         B --> C[Canonical Storage]
-        C --> D[Canonical Data & Event Inputs]
     end
 
-    subgraph Runtime[Runtime Contexts]
-        D --> F[Backtesting]
-        D --> G[Live]
+    subgraph RUNTIME[Runtime Contexts]
+        F[Backtesting]
+        G[Live]
     end
 
-    subgraph Core[Shared Core Semantics]
-        F --> I[State = Event Stream + Configuration]
-        G --> I
+    subgraph CORE[Shared Core Semantics]
+        I[State]
         I --> K[Strategy]
         K --> M[Risk]
         M --> N[Execution Control]
     end
 
-    subgraph Execution[Execution]
-        N --> O[Venue Adapter]
+    subgraph EXECUTION[Execution]
+        O[Venue Adapter]
         O --> P[Venue]
     end
 
-    subgraph Observability[Auditability, Analysis & Operations]
-        I --> Q[Audit Trails]
+    subgraph OBSERVABILITY[Auditability, Analysis & Operations]
+        Q[Audit Trails]
         Q --> R[Analysis]
         Q --> S[Logging & Metrics]
         S --> T[Monitoring & Operations]
         T --> U[Runbooks & Recovery Context]
     end
+
+    DATA --> RUNTIME
+    RUNTIME --> CORE
+    CORE --> EXECUTION
+    CORE --> OBSERVABILITY
 ```
 
 <img src="https://img.spacergif.org/spacer.gif" width="1" height="32"/>

@@ -49,7 +49,7 @@ TradingChassis is intended for:
 
 - trading infrastructure engineers
 - traders with strong engineering background
-- people working with
+- developers working with
     - market data
     - market microstructure
     - deterministic systems
@@ -120,11 +120,7 @@ TradingChassis is structured as a set of related infrastructure repositories rat
 
 ## Documentation
 
-The full technical documentation is maintained at:
-
-**[TradingChassis Documentation](https://tradingchassis.github.io/docs/latest/)**
-
-The documentation covers:
+Each repository contains local documentation focused on understanding the respective codebase, implementation structure, and development context. The [main documentation](https://tradingchassis.github.io/docs/latest/) remains the authoritative source for canonical semantics, architecture, Stack definitions, Operations, and project evolution. It covers:
 
 | Area             | Description                                                                                                                                                |
 | ---------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------- |

@@ -25,7 +25,7 @@ This project uses some of these isolated parts, while adding its own integration
 
 ## Infrastructure Workflow
 
-This diagram is intentionally high-level. It shows how the main infrastructure components fit together across the Research-to-Production workflow. Terms and detailed architecture are defined in the [documentation](#documentation).
+This diagram is intentionally high-level. It shows how infrastructure fits together to create a Research-to-Production workflow. Terms and detailed architecture are defined in the [documentation](#documentation).
 
 ```mermaid
 flowchart TD

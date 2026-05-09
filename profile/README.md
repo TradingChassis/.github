@@ -79,10 +79,8 @@ flowchart TD
     end
 
     subgraph Core[Shared Core Semantics]
-        F --> I
+        F --> I[State = Event Stream + Configuration]
         G --> I
-
-        H --> I[State = Event Stream + Configuration]
         I --> K[Strategy]
         K --> M[Risk]
         M --> N[Execution Control]

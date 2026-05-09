@@ -2,11 +2,9 @@
 
 TradingChassis is an open-source trading infrastructure project for building small-scaled professional-adjacent Research-to-Production trading systems. 
 
-It addresses the infrastructure problems that arise when building such systems: data pipelines, deterministic Event processing, versioned Configuration, reproducible Research, audit trails, structured logging, monitoring, Operations, scalable orchestration, and explicit architecture documentation. The goal is not to provide another trading bot or Strategy collection, but rather to build the infrastructure discipline required to make trading consistent, explainable, maintainable, and operationally reliable. 
+It addresses infrastructure problems that arise when building such systems: data pipelines, deterministic Event processing, versioned Configuration, reproducible Research, audit trails, structured logging, monitoring, Operations, scalable orchestration, explicit architecture documentation. The goal is not to provide another trading bot or Strategy collection, but rather to approach the infrastructure discipline required to make trading consistent, explainable, maintainable, and operationally reliable. 
 
-Successful trading is not only about Strategy logic.
-
-It depends on the surrounding infrastructure: how market data is captured and promoted, how Events are ordered, how State is derived, how Configuration is versioned, how Research results are reproduced, how Live behavior is monitored, how operational failures are investigated, how trading can be audited after the fact.
+Successful trading is not only about Strategy logic. It depends on the surrounding infrastructure: how market data is captured and promoted, how Events are ordered, how State is derived, how Configuration is versioned, how Research results are reproduced, how Live behavior is monitored, how operational failures are investigated, how trading can be audited after the fact.
 
 Many trading projects focus on isolated parts:
 
@@ -27,7 +25,7 @@ This project uses some of these isolated parts, while adding its own integration
 
 ## Infrastructure Workflow
 
-The diagram is intentionally high-level. Terms and detailed architecture are defined in the [documentation](#documentation).
+This diagram is intentionally high-level. It shows how the main infrastructure components fit together across the Research-to-Production workflow. Terms and detailed architecture are defined in the [documentation](#documentation).
 
 ```mermaid
 flowchart TD
@@ -192,10 +190,6 @@ TradingChassis is under active development.
 Before expanding to any higher-level workflows, the focus is on stabilizing the architectural foundation, canonical concepts, Runtime semantics, documentation structure, infrastructure boundaries, and operational model.
 
 The [roadmap](https://tradingchassis.github.io/docs/latest/50-evolution/roadmap/) gives the clearest view of where TradingChassis is heading.
-
-
-<img src="https://img.spacergif.org/spacer.gif" width="1" height="32"/>
-
 
 ## Contributing and Contact
 

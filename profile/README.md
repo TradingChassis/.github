@@ -2,7 +2,7 @@
 
 TradingChassis is an open-source trading infrastructure project for building small-scaled professional-adjacent Research-to-Production trading systems.
 
-It addresses infrastructure problems that arise when building such systems: data pipelines, deterministic Event processing, versioned Configuration, reproducible Research, audit trails, structured logging, monitoring, Operations, scalable orchestration, explicit architecture documentation. The goal is not to provide another trading bot or Strategy collection, but rather to approach the infrastructure discipline required to make trading consistent, explainable, maintainable, and operationally reliable.
+It addresses infrastructure problems that arise when building such systems: data pipelines, deterministic Event processing, versioned Configuration, reproducible Research, audit trails, structured logging, monitoring, operations, scalable orchestration, explicit architecture documentation. The goal is not to provide another trading bot or Strategy collection, but rather to approach the infrastructure discipline required to make trading consistent, explainable, maintainable, and operationally reliable.
 
 Successful trading is not only about Strategy logic. It depends on the surrounding infrastructure: how market data is captured and promoted, how Events are ordered, how State is derived, how Configuration is versioned, how Research results are reproduced, how Live behavior is monitored, how operational failures are investigated, how trading can be audited after the fact.
 
@@ -24,6 +24,8 @@ TradingChassis is:
 - a canonical data and State derivation discipline
 - a modular infrastructure project with explicit Stack boundaries
 - a documentation-heavy engineering project
+
+This project is designed to make the surrounding system of a Strategy explicit: data, Events, State, Configuration, Runtime behavior, observability, auditability, and operations.
 
 ## What It Is Not
 
@@ -143,7 +145,7 @@ TradingChassis is organized around the following infrastructure concerns and wor
 | **Research-to-Production continuity**   | Research, Backtesting, Analysis, and Live operation should not be disconnected worlds with different assumptions. They should be different usage contexts of one coherent infrastructure. |
 | **Versioning and reproducibility**      | Data, Configuration, code, runtime context, and results should be traceable enough to explain what was run, why it behaved as it did, and how it can be reproduced.                       |
 | **Auditability by design**              | Important decisions and State Transitions should be reconstructible from canonical inputs, not inferred from scattered logs or hidden runtime state.                                      |
-| **Observability and Operations**        | Logging, metrics, monitoring, Runbooks, operational procedures, and recovery context are part of the infrastructure.                                                                      |
+| **Observability and operations**        | Logging, metrics, monitoring, Runbooks, operational procedures, and recovery context are part of the infrastructure.                                                                      |
 | **Scalable orchestration**              | Deployment, environment management, Kubernetes, GitOps-style workflows, secret management, and operational boundaries are treated as infrastructure concerns.                             |
 | **Explicit architecture documentation** | Architecture, concepts, ADRs, Stack documents, and operational models are maintained as first-class engineering artifacts.                                                                |
 

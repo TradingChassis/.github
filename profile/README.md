@@ -142,8 +142,6 @@ Concept documents define semantics. Stack documents explain how those semantics 
 
 TradingChassis is organized around the following infrastructure concerns and working principles:
 
-### Infrastructure Concerns
-
 | Concern | What it means |
 | --- | --- |
 | **Deterministic Event processing** | State is derived from an Event Stream under Configuration. There is no hidden mutable truth. |
@@ -154,8 +152,6 @@ TradingChassis is organized around the following infrastructure concerns and wor
 | **Observability and Operations** | Logging, metrics, monitoring, Runbooks, operational procedures, and recovery context are part of the infrastructure. |
 | **Scalable orchestration** | Deployment, environment management, Kubernetes, GitOps-style workflows, secret management, and operational boundaries are treated as infrastructure concerns. |
 | **Explicit architecture documentation** | Architecture, concepts, ADRs, Stack documents, and operational models are maintained as first-class engineering artifacts. |
-
-### Working Principles
 
 | Principle | What it means |
 | --- | --- |

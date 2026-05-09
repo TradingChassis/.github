@@ -10,54 +10,63 @@ It addresses infrastructure problems that arise when building such systems: data
 
 Successful trading is not only about Strategy logic. It depends on the surrounding infrastructure: how market data is captured and promoted, how Events are ordered, how State is derived, how Configuration is versioned, how Research results are reproduced, how Live behavior is monitored, how operational failures are investigated, how trading can be audited after the fact.
 
-A trading project may focus on an isolated part:
-
-| Isolated part         |
-| --------------------- |
-| Strategy logic        |
-| Backtesting           |
-| exchange connectivity |
-| signal generation     |
-| portfolio notebooks   |
-| execution scripts     |
+A trading project may focus on an isolated part: Strategy logic, Backtesting, exchange connectivity, signal generation.
 
 This project uses some of these isolated parts, while adding its own integration to form a coherent infrastructure. It is production-like but not fully production-grade; it is a solo-maintained setup built to approximate professional standards.
 
 > **Terminology note:** This README follows the [TradingChassis terminology](https://tradingchassis.github.io/docs/latest/00-guides/terminology/). Capitalized terms are used according to the canonical definitions in the documentation.
 
-| TradingChassis is                                               |
-| --------------------------------------------------------------- |
-| trading infrastructure                                          |
-| Research-to-Production architecture                             |
-| a deterministic Event-driven Core model                         |
-| a canonical data and State derivation discipline                |
-| a modular infrastructure project with explicit Stack boundaries |
-| a documentation-heavy engineering project                       |
+<img src="https://img.spacergif.org/spacer.gif" width="1" height="32"/>
 
-| TradingChassis is not                        |
-| -------------------------------------------- |
-| a signal or Strategy library                 |
-| a plug-and-play exchange bot                 |
-| a promise of trading performance             |
-| a notebook-only Backtesting framework        |
-| a beginner-friendly algo-trading course      |
-| a quick way to automate discretionary trades |
+## What It Is
 
-This project is intentionally focused on infrastructure, not on selling Strategies or simplifying trading into buy/sell signals.
+TradingChassis is:
+
+- trading infrastructure
+- Research-to-Production architecture
+- a deterministic Event-driven Core model
+- a canonical data and State derivation discipline
+- a modular infrastructure project with explicit Stack boundaries
+- a documentation-heavy engineering project
+
+## What It Is Not
+
+TradingChassis is not:
+
+- a signal or Strategy library
+- a plug-and-play exchange bot
+- a promise of trading performance
+- a notebook-only Backtesting framework
+- a beginner-friendly algo-trading course
+- a quick way to automate discretionary trades
+
+This project is intentionally focused on infrastructure, not on selling Strategies or simplifying trading into buy/sell signals.  
 It deliberately exposes architecture, semantics, and operational boundaries.
+
+## Who It Is For
 
 TradingChassis is intended for:
 
-| Audience                                   |
-| ------------------------------------------ |
-| trading infrastructure engineers           |
-| traders with strong engineering background |
-| people working with market data            |
-| people working with market microstructure  |
-| people working with deterministic systems  |
-| people working with reproducible workflows |
+- trading infrastructure engineers
+- traders with strong engineering background
+- people working with
+    - market data
+    - market microstructure
+    - deterministic systems
+    - reproducible workflows
 
 It is especially relevant for not only testing a trading Strategy once, but building around it: data, State, execution semantics, observability, auditability, reproducibility, deployment, operations.
+
+
+
+
+
+
+
+
+
+
+
 
 <img src="https://img.spacergif.org/spacer.gif" width="1" height="32"/>
 
@@ -89,12 +98,12 @@ flowchart TD
         O --> P[Venue]
     end
 
-    subgraph OBSERVABILITY[Auditability, Analysis & Operations]
+    subgraph OBSERVABILITY[Auditability, Analysis, Operations]
         Q[Audit Trails]
         Q --> R[Analysis]
         Q --> S[Logging & Metrics]
         S --> T[Monitoring & Operations]
-        T --> U[Runbooks & Recovery Context]
+        T --> U[Runbooks & Recovery]
     end
 
     DATA --> RUNTIME

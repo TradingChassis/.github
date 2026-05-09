@@ -25,8 +25,6 @@ TradingChassis is:
 - a modular infrastructure project with explicit Stack boundaries
 - a documentation-heavy engineering project
 
-This project is designed to make the surrounding system of a Strategy explicit: data, Events, State, Configuration, Runtime behavior, observability, auditability, and operations.
-
 ## What It Is Not
 
 TradingChassis is not:
@@ -37,9 +35,6 @@ TradingChassis is not:
 - a notebook-only Backtesting framework
 - a beginner-friendly algo-trading course
 - a quick way to automate discretionary trades
-
-This project is intentionally focused on infrastructure, not on selling Strategies or simplifying trading into buy/sell signals.  
-It deliberately exposes architecture, semantics, and operational boundaries.
 
 ## Who It Is For
 
@@ -52,8 +47,6 @@ TradingChassis is intended for:
     - market microstructure
     - deterministic systems
     - reproducible workflows
-
-It is especially relevant for not only testing a trading Strategy once, but building around it: data, State, execution semantics, observability, auditability, reproducibility, deployment, operations.
 
 <img src="https://img.spacergif.org/spacer.gif" width="1" height="32"/>
 

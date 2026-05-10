@@ -14,6 +14,22 @@ This project uses some of these isolated parts, while adding its own integration
 
 <img src="https://img.spacergif.org/spacer.gif" width="1" height="32"/>
 
+
+
+## Project Positioning
+
+| What It Is | What It Is Not | Who It Is For |
+| --- | --- | --- |
+| trading infrastructure | a signal or Strategy library | trading infrastructure engineers |
+| Research-to-Production architecture | a plug-and-play exchange bot | traders with strong engineering background |
+| a deterministic Event-driven Core model | a promise of trading performance | developers working with market data |
+| a canonical data and State derivation discipline | a notebook-only Backtesting framework | developers working with market microstructure |
+| a modular infrastructure project with explicit Stack boundaries | a beginner-friendly algo-trading course | developers working with deterministic systems |
+| a documentation-heavy engineering project | a quick way to automate discretionary trades | developers working with reproducible workflows |
+
+
+
+
 ## What It Is
 
 TradingChassis is:

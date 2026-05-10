@@ -6,9 +6,7 @@ It addresses infrastructure problems that arise when building such systems: data
 
 Successful trading is not only about Strategy logic. It depends on the surrounding infrastructure: how market data is captured and promoted, how Events are ordered, how State is derived, how Configuration is versioned, how Research results are reproduced, how Live behavior is monitored, how operational failures are investigated, how trading can be audited after the fact.
 
-A trading project may focus on an isolated part: Strategy logic, Backtesting, exchange connectivity, signal generation.
-
-This project uses some of these isolated parts, while adding its own integration to form a coherent infrastructure. It is production-like but not fully production-grade; it is a solo-maintained setup built to approximate professional standards.
+A trading project may focus on an isolated part: Strategy logic, Backtesting, exchange connectivity, signal generation. This project uses some of these isolated parts, while adding its own integration to form a coherent infrastructure. It is production-like but not fully production-grade; it is a solo-maintained setup built to approximate professional standards.
 
 > **Terminology note:** This README follows the terminology used in the [main documentation](#documentation).
 
@@ -86,7 +84,7 @@ TradingChassis is structured as a set of related infrastructure repositories rat
 
 ## Documentation
 
-Each repository contains local documentation focused on understanding the respective codebase, implementation structure, and development context. The [main documentation](https://tradingchassis.github.io/docs/latest/) remains the authoritative source for canonical semantics, architecture, Stack definitions, Operations, and project evolution. It covers:
+A repository may contain local documentation focused on understanding the respective codebase, implementation structure, and development context. The [main documentation](https://tradingchassis.github.io/docs/latest/) remains the authoritative source for canonical semantics, architecture, Stack definitions, Operations, and project evolution. It covers:
 
 | Area | Description |
 | --- | --- |

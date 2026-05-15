@@ -1,6 +1,6 @@
 # TradingChassis
 
-TradingChassis is an open-source trading infrastructure project for building small-scaled professional-adjacent Research-to-Production trading systems.
+TradingChassis is an open-source trading infrastructure project for building small-scaled Research-to-Production trading systems.
 
 It addresses infrastructure problems that arise when building such systems: data pipelines, deterministic Event processing, versioned Configuration, reproducible Research, audit trails, structured logging, monitoring, operations, scalable orchestration, explicit architecture documentation. The goal is not to provide another trading bot or Strategy collection, but rather to approach the infrastructure discipline required to make trading consistent, explainable, maintainable, and operationally reliable.
 
@@ -28,7 +28,7 @@ A trading project may focus on an isolated part: Strategy logic, Backtesting, ex
 This diagram is intentionally high-level. It shows how infrastructure fits together to create a Research-to-Production workflow. Terms and detailed architecture are defined in the [documentation](#documentation).
 
 ```mermaid
-flowchart TD
+flowchart TB
     subgraph DATA[Data]
         A[Raw Market Data] --> B[Validation & Normalization]
         B --> C[Canonical Storage]
@@ -120,7 +120,7 @@ TradingChassis is organized around the following infrastructure concerns and wor
 | Principle | What it means |
 | --- | --- |
 | **Architecture is a first-class artifact** | TradingChassis documents not only what is implemented, but why it is structured this way. Architecture documents, ADRs, concept definitions, Stack documents, and operational documentation are maintained with the same seriousness as code. |
-| **Infrastructure before Strategy shortcuts** | Professional trading requires infrastructure discipline before Strategy convenience. A Strategy is only one Component in a larger system; data quality, deterministic processing, reproducibility, observability, auditability, and deployment are equally important. |
+| **Infrastructure before Strategy shortcuts** | Trading requires infrastructure discipline before Strategy convenience. A Strategy is only one Component in a larger system; data quality, deterministic processing, reproducibility, observability, auditability, and deployment are equally important. |
 | **Determinism is non-negotiable** | Given the same Event Stream and the same Configuration, the infrastructure must derive the same State at every Processing Order position. Runtime behavior must not depend on hidden mutable truths, wall-clock side effects, scheduler timing, or uncontrolled concurrency. |
 | **Events are the source of State Transitions** | State changes only through Events processed under Configuration. State is not an independent source of truth, but a deterministic projection from canonical inputs. |
 | **Canonical semantics come before implementation details** | Core concepts such as Event, Event Stream, Configuration, State, Intent, Risk, Execution Control, Order, Runtime, Stack, and Component are defined explicitly. Implementations realize these concepts; they do not redefine them locally. |

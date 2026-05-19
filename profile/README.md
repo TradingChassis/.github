@@ -1,149 +1,56 @@
 # TradingChassis
 
-TradingChassis is an open-source trading infrastructure project for building small-scaled Research-to-Production trading systems.
-
-It addresses infrastructure problems that arise when building such systems: data pipelines, deterministic Event processing, versioned Configuration, reproducible Research, audit trails, structured logging, monitoring, operations, scalable orchestration, explicit architecture documentation. The goal is not to provide another trading bot or Strategy collection, but rather to approach the infrastructure discipline required to make trading consistent, explainable, maintainable, and operationally reliable.
-
-Successful trading is not only about Strategy logic. It depends on the surrounding infrastructure: how market data is captured and promoted, how Events are ordered, how State is derived, how Configuration is versioned, how Research results are reproduced, how Live behavior is monitored, how operational failures are investigated, how trading can be audited after the fact.
-
-A trading project may focus on an isolated part: Strategy logic, Backtesting, exchange connectivity, signal generation. This project uses some of these isolated parts, while adding its own integration to form a coherent infrastructure. It is production-like but not fully production-grade; it is a solo-maintained setup built to approximate professional standards.
-
-> **Terminology note:** This README follows the terminology used in the [main documentation](#documentation).
-
-<img src="https://img.spacergif.org/spacer.gif" width="1" height="32"/>
-
-## Project Positioning
-
-| What It Is | What It Is Not | Who It Is For |
-| --- | --- | --- |
-| Infrastructure for trading systems. | A signal or Strategy library. | Trading infrastructure engineers. |
-| Research-to-Production architecture. | A plug-and-play exchange bot. | Traders with strong engineering background. |
-| A deterministic Event-driven Core and State model. | A promise of trading performance. | Developers working with market data, market microstructure, and deterministic systems. |
-| A modular, documentation-heavy engineering project. | A notebook-only Backtesting tool or beginner algo-trading course. | People building reproducible, observable, and auditable trading workflows. |
-
-<img src="https://img.spacergif.org/spacer.gif" width="1" height="32"/>
-
-## Infrastructure Workflow
-
-This diagram is intentionally high-level. It shows how infrastructure fits together to create a Research-to-Production workflow. Terms and detailed architecture are defined in the [documentation](#documentation).
-
-```mermaid
-flowchart TB
-    subgraph DATA[Data]
-        A[Raw Market Data] --> B[Validation & Normalization]
-        B --> C[Canonical Storage]
-    end
-
-    subgraph RUNTIME[Runtime Contexts]
-        F[Backtesting]
-        G[Live]
-    end
-
-    subgraph CORE[Shared Core Semantics]
-        I[State]
-        I --> K[Strategy]
-        K --> M[Risk]
-        M --> N[Execution Control]
-    end
-
-    subgraph EXECUTION[Execution]
-        O[Venue Adapter]
-        O --> P[Venue]
-    end
-
-    subgraph OBSERVABILITY[Auditability, Analysis, Operations]
-        Q[Audit Trails]
-        Q --> R[Analysis]
-        Q --> S[Logging & Metrics]
-        S --> T[Monitoring & Operations]
-        T --> U[Runbooks & Recovery]
-    end
-
-    DATA --> RUNTIME
-    RUNTIME --> CORE
-    CORE --> EXECUTION
-    CORE --> OBSERVABILITY
-```
-
-<img src="https://img.spacergif.org/spacer.gif" width="1" height="32"/>
-
-## Repositories
-
-TradingChassis is structured as a set of related infrastructure repositories rather than a single monolithic application:
-
-| Repository | Role |
-| --- | --- |
-| [Documentation](https://github.com/TradingChassis/docs) | The authoritative reference for architecture, canonical concepts, ADRs, Stack documents, operations, and project evolution. |
-| [Core](https://github.com/TradingChassis/core) | The deterministic Event-driven engine. It applies the Event Stream, derives State, invokes Strategy, applies Risk, and runs Execution Control as part of Event processing. |
-| [Core Runtime](https://github.com/TradingChassis/core-runtime) | Runtime environments for running the Core in Backtesting and Live contexts. Runtimes share the same semantic model while differing in data sources, Venue implementation, and surrounding infrastructure. Live Runtime support is work in progress. |
-| [Infrastructure](https://github.com/TradingChassis/infrastructure) | Kubernetes deployment, environment management, orchestration, and operational tooling for running infrastructure Components. |
-| [Infrastructure Secrets](https://github.com/TradingChassis/infrastructure-secrets) | Secret management and Vault integration for Kubernetes-based environments, including OCI secrets and Secrets Store CSI integration. |
-| Data| Data infrastructure for recording raw market data, validation, normalization, promotion, and provenance. This repository is work in progress. |
-
-<img src="https://img.spacergif.org/spacer.gif" width="1" height="32"/>
-
-## Documentation
-
-A repository may contain local documentation focused on understanding the respective codebase, implementation structure, and development context. The [main documentation](https://tradingchassis.github.io/docs/latest/) remains the authoritative source for canonical semantics, architecture, Stack definitions, Operations, and project evolution. It covers:
-
-| Area | Description |
-| --- | --- |
-| **Architecture** | Structure, logical and physical views, and Architecture Decision Records. |
-| **Concepts** | Canonical semantic models such as Event, Event Stream, Configuration, State, Determinism, Intent, Risk, Execution Control, Order, Runtime, and Invariants. |
-| **Stacks** | Implementation-facing views of infrastructure areas such as Data Recording, Data Quality, Data Storage, Backtesting, Live, Analysis, and Monitoring. |
-| **Operations** | Operational monitoring, runbooks, recovery context, and maintenance procedures. This navigation is work in progress. |
-| **Evolution** | Roadmap, milestones, development logs, and architectural progress. |
-
-Concept documents define semantics. Stack documents explain how those semantics are realized. Operations documents explain how the infrastructure is used, maintained, monitored, and recovered.
-
-<img src="https://img.spacergif.org/spacer.gif" width="1" height="32"/>
-
-## What TradingChassis Builds
-
-TradingChassis is organized around the following infrastructure concerns and working principles:
-
-### Infrastructure Concerns
-
-| Concern | What it means |
-| --- | --- |
-| **Deterministic Event processing** | State is derived from an Event Stream under Configuration. There is no hidden mutable truth. |
-| **Canonical data flows** | Raw market data is recorded, validated, normalized, and promoted into canonical forms before it is used by Research, Backtesting, Analysis, or Live systems. |
-| **Research-to-Production continuity** | Research, Backtesting, Analysis, and Live operation should not be disconnected worlds with different assumptions. They should be different usage contexts of one coherent infrastructure. |
-| **Versioning and reproducibility** | Data, Configuration, code, runtime context, and results should be traceable enough to explain what was run, why it behaved as it did, and how it can be reproduced. |
-| **Auditability by design** | Important decisions and State Transitions should be reconstructible from canonical inputs, not inferred from scattered logs or hidden runtime state. |
-| **Observability and operations** | Logging, metrics, monitoring, Runbooks, operational procedures, and recovery context are part of the infrastructure. |
-| **Scalable orchestration** | Deployment, environment management, Kubernetes, GitOps-style workflows, secret management, and operational boundaries are treated as infrastructure concerns. |
-| **Explicit architecture documentation** | Architecture, concepts, ADRs, Stack documents, and operational models are maintained as first-class engineering artifacts. |
-
-### Working Principles
-
-| Principle | What it means |
-| --- | --- |
-| **Architecture is a first-class artifact** | TradingChassis documents not only what is implemented, but why it is structured this way. Architecture documents, ADRs, concept definitions, Stack documents, and operational documentation are maintained with the same seriousness as code. |
-| **Infrastructure before Strategy shortcuts** | Trading requires infrastructure discipline before Strategy convenience. A Strategy is only one Component in a larger system; data quality, deterministic processing, reproducibility, observability, auditability, and deployment are equally important. |
-| **Determinism is non-negotiable** | Given the same Event Stream and the same Configuration, the infrastructure must derive the same State at every Processing Order position. Runtime behavior must not depend on hidden mutable truths, wall-clock side effects, scheduler timing, or uncontrolled concurrency. |
-| **Events are the source of State Transitions** | State changes only through Events processed under Configuration. State is not an independent source of truth, but a deterministic projection from canonical inputs. |
-| **Canonical semantics come before implementation details** | Core concepts such as Event, Event Stream, Configuration, State, Intent, Risk, Execution Control, Order, Runtime, Stack, and Component are defined explicitly. Implementations realize these concepts; they do not redefine them locally. |
-| **Backtesting and Live belong to one infrastructure** | Backtesting is part of Research. Live is a different operational context, but not a different conceptual universe. The goal is to reduce structural divergence between Backtesting and Live by making them depend on shared infrastructure semantics. |
-| **Observability and auditability are design requirements** | Logs, metrics, monitoring, audit trails, and run metadata are required for understanding, debugging, reproducing, and operating. |
-| **Operations are part of the infrastructure** | Runbooks, recovery procedures, deployment models, secret management, monitoring, and operational boundaries are part of the infrastructure. Trading must also be maintainable, observable, recoverable, and explainable. |
+TradingChassis is a personal trading-infrastructure engineering project.  
+The public work is focused on infrastructure for reproducible trading-system experimentation and operational readiness.
 
 <img src="https://img.spacergif.org/spacer.gif" width="1" height="32"/>
 
 ## Current Status
 
-TradingChassis is under active development.
-
-Before expanding to any higher-level workflows, the focus is on stabilizing the architectural foundation, canonical concepts, Runtime semantics, documentation structure, infrastructure boundaries, and operational model.
-
-The [roadmap](https://tradingchassis.github.io/docs/latest/50-evolution/roadmap/) gives the clearest view of where TradingChassis is heading.
+TradingChassis has moved away from its earlier custom trading-engine direction.  
+That architecture is preserved as archived historical work, while active development is centered on infrastructure.
 
 <img src="https://img.spacergif.org/spacer.gif" width="1" height="32"/>
 
-## Contributing and Contact
+## Current Focus
 
-Contributions, feedback, and technical discussion are welcome, especially around trading infrastructure, deterministic systems, market data, Research-to-Production workflows, observability, reproducibility, and operations.
+- Kubernetes-based environments for repeatable research and backtesting workflows
+- GitOps-driven infrastructure lifecycle and environment promotion
+- Observability foundations (metrics, logs, monitoring, and operational visibility)
+- Reproducible environments and operational tooling
+- Secrets management integration for infrastructure workflows
 
-See [CONTRIBUTING.md](https://github.com/TradingChassis/.github/blob/main/CONTRIBUTING.md) for guidance.
+<img src="https://img.spacergif.org/spacer.gif" width="1" height="32"/>
 
-For project inquiries, use the relevant repository discussions or issues.
+## Repositories
+
+### Active
+
+| Repository | Status | Purpose |
+| --- | --- | --- |
+| [`infrastructure`](https://github.com/TradingChassis/infrastructure) | Active | Cloud Kubernetes, GitOps, observability, and operational infrastructure for reproducible research and backtesting environments. |
+| [`infrastructure-secrets`](https://github.com/TradingChassis/infrastructure-secrets) | Active | Supporting fork/integration work for secrets management in the infrastructure stack. |
+
+<img src="https://img.spacergif.org/spacer.gif" width="1" height="32"/>
+
+## Archived Work
+
+| Repository | Status | Notes |
+| --- | --- | --- |
+| [`core`](https://github.com/TradingChassis/core) | Archived (Legacy) | Historical exploration of a deterministic event-driven trading decision engine. |
+| [`core-runtime`](https://github.com/TradingChassis/core-runtime) | Archived (Legacy) | Historical runtime/orchestration layer for the previous core architecture. |
+| [`docs`](https://github.com/TradingChassis/docs) | Archived (Legacy) | Historical documentation archive for the previous architecture. |
+
+<img src="https://img.spacergif.org/spacer.gif" width="1" height="32"/>
+
+## Direction
+
+The direction is still evolving.  
+Near-term work remains focused on practical infrastructure engineering that can support future trading operations workflows in a reproducible and observable way.
+
+<img src="https://img.spacergif.org/spacer.gif" width="1" height="32"/>
+
+## Contact / Notes
+
+TradingChassis is maintained as a portfolio-style engineering project.  
+For updates, feedback, or technical discussion, use repository issues/discussions and see [`CONTRIBUTING.md`](https://github.com/TradingChassis/.github/blob/main/CONTRIBUTING.md).

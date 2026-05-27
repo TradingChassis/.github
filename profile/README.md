@@ -111,8 +111,6 @@ For technical details, use the individual repository READMEs, documentation, iss
 
 </div>
 
-<br/>
-
 
 <img src="https://img.spacergif.org/spacer.gif" width="1" height="16"/>
 

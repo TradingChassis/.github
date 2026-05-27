@@ -86,4 +86,14 @@ The focus is infrastructure discipline: reproducibility, observability, operatio
 
 For technical details, use the individual repository READMEs, documentation, issues, and discussions.
 
+
+<img src="https://img.spacergif.org/spacer.gif" width="1" height="16"/>
+
+
+## Contributing and Contact
+
 Contributions, feedback, and technical discussion are welcome, especially around trading infrastructure, deterministic systems, market data, research-to-production workflows, observability, reproducibility, and operations.
+
+See [CONTRIBUTING.md](https://github.com/TradingChassis/.github/blob/main/CONTRIBUTING.md) for guidance.
+
+For project inquiries, use the relevant repository discussions or issues.

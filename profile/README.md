@@ -4,7 +4,9 @@ TradingChassis is an applied infrastructure and reliability lab for trading-adja
 
 It uses a trading domain to explore SRE, observability, reproducibility, operational workflows, and failure-aware infrastructure design.
 
+
 <img src="https://img.spacergif.org/spacer.gif" width="1" height="16"/>
+
 
 <p align="center">
   <img
@@ -14,7 +16,9 @@ It uses a trading domain to explore SRE, observability, reproducibility, operati
   />
 </p>
 
+
 <img src="https://img.spacergif.org/spacer.gif" width="1" height="16"/>
+
 
 ## Current Direction
 
@@ -38,7 +42,9 @@ The current direction is focused on **small, understandable proof-of-skill syste
 
 The goal is to demonstrate infrastructure and reliability engineering discipline in a concrete domain, not to build a production trading platform.
 
+
 <img src="https://img.spacergif.org/spacer.gif" width="1" height="16"/>
+
 
 ## Active Work
 
@@ -48,7 +54,9 @@ The goal is to demonstrate infrastructure and reliability engineering discipline
 | [`infrastructure`](https://github.com/TradingChassis/infrastructure) | Active / Foundation | Kubernetes, GitOps, observability, environment management, and operational infrastructure. |
 | [`infrastructure-secrets`](https://github.com/TradingChassis/infrastructure-secrets) | Supporting | Secret-management integration work for Kubernetes-based infrastructure workflows. |
 
+
 <img src="https://img.spacergif.org/spacer.gif" width="1" height="16"/>
+
 
 ## Active Project Map
 
@@ -60,7 +68,9 @@ The goal is to demonstrate infrastructure and reliability engineering discipline
   />
 </p>
 
+
 <img src="https://img.spacergif.org/spacer.gif" width="1" height="16"/>
+
 
 ## Archived Work
 
@@ -73,7 +83,9 @@ That direction is preserved as historical context, but it is no longer the activ
 | [`core-runtime`](https://github.com/TradingChassis/core-runtime) | Archived / Legacy | Historical runtime and orchestration layer for the previous Core architecture. |
 | [`docs`](https://github.com/TradingChassis/docs) | Archived / Legacy | Historical documentation archive for architecture, concepts, ADRs, operations, and project evolution. |
 
+
 <img src="https://img.spacergif.org/spacer.gif" width="1" height="16"/>
+
 
 ## Boundaries
 
@@ -81,7 +93,11 @@ TradingChassis is intentionally scoped as a portfolio-style engineering lab.
 
 It is not a trading bot, strategy library, alpha research project, or claim of trading performance.
 
-<div align="center">
+The focus is infrastructure discipline: reproducibility, observability, operational clarity, safety boundaries, and failure-aware workflows.
+
+For technical details, use the individual repository READMEs, documentation, issues, and discussions.
+
+<div align="left">
 
 <img src="https://img.shields.io/badge/Not%20A-Custom%20Trading%20Engine-334155?style=for-the-badge" />
 <img src="https://img.shields.io/badge/Not%20A-Production%20Trading%20System-334155?style=for-the-badge" />
@@ -97,11 +113,9 @@ It is not a trading bot, strategy library, alpha research project, or claim of t
 
 <br/>
 
-The focus is infrastructure discipline: reproducibility, observability, operational clarity, safety boundaries, and failure-aware workflows.
-
-For technical details, use the individual repository READMEs, documentation, issues, and discussions.
 
 <img src="https://img.spacergif.org/spacer.gif" width="1" height="16"/>
+
 
 ## Contributing and Contact
 

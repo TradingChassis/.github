@@ -6,27 +6,39 @@ It uses a trading domain to explore SRE, observability, reproducibility, operati
 
 It is not a trading bot, strategy library, alpha research project, or claim of trading performance.
 
+<p align="center">
+  <img
+    src="../assets/tradingchassis-overview.svg"
+    alt="TradingChassis overview: applied infrastructure and reliability lab for trading-adjacent systems"
+    width="760"
+  />
+</p>
 
 <img src="https://img.spacergif.org/spacer.gif" width="1" height="16"/>
-
 
 ## Current Direction
 
-The current direction is focused on **small, understandable proof-of-skill systems**:
+<div align="center">
 
-- reproducible run workflows
-- artifact-first observability
-- local-first operational tooling
-- metrics, dashboards, and reports
-- runtime safety boundaries
-- infrastructure automation
-- failure-aware system design
+<img src="https://img.shields.io/badge/Reproducible-Run%20Workflows-0F172A?style=for-the-badge" />
+<img src="https://img.shields.io/badge/Observable-Metrics%20%2B%20Reports-2563EB?style=for-the-badge" />
+<img src="https://img.shields.io/badge/Local--First-Operational%20Tooling-334155?style=for-the-badge" />
+
+<br/>
+
+<img src="https://img.shields.io/badge/Runtime-Safety%20Boundaries-0F766E?style=for-the-badge" />
+<img src="https://img.shields.io/badge/Infrastructure-Kubernetes%20%2B%20GitOps-326CE5?style=for-the-badge&logo=kubernetes&logoColor=white" />
+<img src="https://img.shields.io/badge/Failure--Aware-System%20Design-7C3AED?style=for-the-badge" />
+
+</div>
+
+<br/>
+
+The current direction is focused on **small, understandable proof-of-skill systems**.
 
 The goal is to demonstrate infrastructure and reliability engineering discipline in a concrete domain, not to build a production trading platform.
 
-
 <img src="https://img.spacergif.org/spacer.gif" width="1" height="16"/>
-
 
 ## Active Work
 
@@ -36,23 +48,19 @@ The goal is to demonstrate infrastructure and reliability engineering discipline
 | [`infrastructure`](https://github.com/TradingChassis/infrastructure) | Active / Foundation | Kubernetes, GitOps, observability, environment management, and operational infrastructure. |
 | [`infrastructure-secrets`](https://github.com/TradingChassis/infrastructure-secrets) | Supporting | Secret-management integration work for Kubernetes-based infrastructure workflows. |
 
-
 <img src="https://img.spacergif.org/spacer.gif" width="1" height="16"/>
-
 
 ## Active Project Map
 
-| Area | What it demonstrates |
-| --- | --- |
-| **Run operations** | Versioned run specs, local workflows, generated artifacts, reports, and operational metadata. |
-| **Observability** | Metrics export, local Prometheus/Grafana workflows, and dashboard-oriented inspection. |
-| **Runtime safety** | File-based kill switch behavior and explicit operational boundaries. |
-| **Infrastructure** | Kubernetes/GitOps foundation for reproducible environments and future deployment paths. |
-| **Documentation** | Scope, limitations, run model, quickstarts, demo flows, and archived design history. |
-
+<p align="center">
+  <img
+    src="../assets/active-project-map.svg"
+    alt="Active project map: run operations, observability, runtime safety, infrastructure, and documentation"
+    width="760"
+  />
+</p>
 
 <img src="https://img.spacergif.org/spacer.gif" width="1" height="16"/>
-
 
 ## Archived Work
 
@@ -65,34 +73,37 @@ That direction is preserved as historical context, but it is no longer the activ
 | [`core-runtime`](https://github.com/TradingChassis/core-runtime) | Archived / Legacy | Historical runtime and orchestration layer for the previous Core architecture. |
 | [`docs`](https://github.com/TradingChassis/docs) | Archived / Legacy | Historical documentation archive for architecture, concepts, ADRs, operations, and project evolution. |
 
-
 <img src="https://img.spacergif.org/spacer.gif" width="1" height="16"/>
-
 
 ## Boundaries
 
-TradingChassis is intentionally scoped as a portfolio-style engineering lab. It is maintained as a personal proof-of-skill project.
+TradingChassis is intentionally scoped as a portfolio-style engineering lab.
 
-It does not aim to be:
+<div align="center">
 
-- a custom trading engine
-- a production trading system
-- a live trading system
-- a strategy research platform
-- a profitability or alpha claim
-- a low-latency execution stack
+<img src="https://img.shields.io/badge/Not%20A-Custom%20Trading%20Engine-334155?style=for-the-badge" />
+<img src="https://img.shields.io/badge/Not%20A-Production%20Trading%20System-334155?style=for-the-badge" />
+<img src="https://img.shields.io/badge/Not%20A-Strategy%20Research%20Platform-334155?style=for-the-badge" />
+
+<br/>
+
+<img src="https://img.shields.io/badge/No-Profitability%20Claim-7F1D1D?style=for-the-badge" />
+<img src="https://img.shields.io/badge/No-Alpha%20Claim-7F1D1D?style=for-the-badge" />
+<img src="https://img.shields.io/badge/No-Low--Latency%20Claim-7F1D1D?style=for-the-badge" />
+
+</div>
+
+<br/>
 
 The focus is infrastructure discipline: reproducibility, observability, operational clarity, safety boundaries, and failure-aware workflows.
 
 For technical details, use the individual repository READMEs, documentation, issues, and discussions.
 
-
 <img src="https://img.spacergif.org/spacer.gif" width="1" height="16"/>
-
 
 ## Contributing and Contact
 
-Contributions, feedback, and technical discussion are welcome, especially around trading infrastructure, deterministic systems, market data, research-to-production workflows, observability, reproducibility, and operations.
+Contributions, feedback, and technical discussion are welcome around infrastructure, reliability engineering, observability, reproducibility, operational workflows, and trading-adjacent systems.
 
 See [CONTRIBUTING.md](https://github.com/TradingChassis/.github/blob/main/CONTRIBUTING.md) for guidance.
 

@@ -4,7 +4,7 @@ TradingChassis is an applied infrastructure and reliability lab for trading-adja
 
 It uses a trading domain to explore SRE, observability, reproducibility, operational workflows, and failure-aware infrastructure design.
 
-It is not a trading bot, strategy library, alpha research project, or claim of trading performance.
+<img src="https://img.spacergif.org/spacer.gif" width="1" height="16"/>
 
 <p align="center">
   <img
@@ -78,6 +78,8 @@ That direction is preserved as historical context, but it is no longer the activ
 ## Boundaries
 
 TradingChassis is intentionally scoped as a portfolio-style engineering lab.
+
+It is not a trading bot, strategy library, alpha research project, or claim of trading performance.
 
 <div align="center">
 

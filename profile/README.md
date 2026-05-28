@@ -1,7 +1,6 @@
 # TradingChassis
 
-TradingChassis is an applied infrastructure and reliability lab for trading-adjacent systems.
-
+TradingChassis is an applied infrastructure and reliability lab for trading-adjacent systems.  
 It uses trading as a domain to learn SRE, observability, reproducibility, operational workflows, and failure-aware infrastructure design.
 
 
@@ -38,9 +37,8 @@ It uses trading as a domain to learn SRE, observability, reproducibility, operat
 
 <br/>
 
-The current direction is focused on **small, understandable proof-of-skill systems**.
-
-The goal is to demonstrate infrastructure and reliability engineering discipline in a concrete domain, not to build a production trading platform.
+The current direction is focused on **small, understandable proof-of-skill systems**.  
+The goal is to demonstrate infrastructure and reliability engineering discipline in a concrete domain.
 
 
 <img src="https://img.spacergif.org/spacer.gif" width="1" height="16"/>
@@ -75,7 +73,7 @@ The goal is to demonstrate infrastructure and reliability engineering discipline
 ## Archived Work
 
 Earlier repositories explored a custom trading-engine architecture.  
-That direction is preserved as historical context, but it is no longer the active implementation path.
+That direction is preserved as historical context and is no longer the active implementation path.
 
 | Repository | Status | Notes |
 | --- | --- | --- |
@@ -89,12 +87,10 @@ That direction is preserved as historical context, but it is no longer the activ
 
 ## Boundaries
 
-TradingChassis is intentionally scoped as a portfolio-style engineering lab.
-
+TradingChassis is intentionally scoped as a portfolio-style engineering lab.  
 It is not a trading bot, strategy library, alpha research project, or claim of trading performance.
 
-The focus is infrastructure discipline: reproducibility, observability, operational clarity, safety boundaries, and failure-aware workflows.
-
+The focus is infrastructure discipline: reproducibility, observability, operational clarity, safety boundaries, and failure-aware workflows.  
 For technical details, use the individual repository READMEs, documentation, issues, and discussions.
 
 <div align="left">

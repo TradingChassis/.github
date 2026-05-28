@@ -10,35 +10,35 @@
     Applied infrastructure and reliability lab for trading-adjacent systems.
   </text>
 
-  <!-- Badge row -->
-  <g transform="translate(34, 100)">
+  <!-- Badge row centered -->
+  <g transform="translate(56, 100)">
     <rect width="158" height="30" rx="15" fill="#111827"/>
     <rect x="1" y="1" width="156" height="28" rx="14" stroke="#2563EB" stroke-opacity="0.5"/>
-    <text x="18" y="20" fill="#BFDBFE" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="12" font-weight="700">
+    <text x="79" y="15" text-anchor="middle" dominant-baseline="middle" fill="#BFDBFE" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="12" font-weight="700">
       SRE / Reliability
     </text>
   </g>
 
-  <g transform="translate(206, 100)">
+  <g transform="translate(228, 100)">
     <rect width="150" height="30" rx="15" fill="#111827"/>
     <rect x="1" y="1" width="148" height="28" rx="14" stroke="#2563EB" stroke-opacity="0.5"/>
-    <text x="18" y="20" fill="#BFDBFE" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="12" font-weight="700">
+    <text x="75" y="15" text-anchor="middle" dominant-baseline="middle" fill="#BFDBFE" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="12" font-weight="700">
       Observability
     </text>
   </g>
 
-  <g transform="translate(370, 100)">
+  <g transform="translate(392, 100)">
     <rect width="156" height="30" rx="15" fill="#111827"/>
     <rect x="1" y="1" width="154" height="28" rx="14" stroke="#2563EB" stroke-opacity="0.5"/>
-    <text x="18" y="20" fill="#BFDBFE" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="12" font-weight="700">
+    <text x="78" y="15" text-anchor="middle" dominant-baseline="middle" fill="#BFDBFE" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="12" font-weight="700">
       Reproducibility
     </text>
   </g>
 
-  <g transform="translate(540, 100)">
+  <g transform="translate(562, 100)">
     <rect width="142" height="30" rx="15" fill="#111827"/>
     <rect x="1" y="1" width="140" height="28" rx="14" stroke="#2563EB" stroke-opacity="0.5"/>
-    <text x="18" y="20" fill="#BFDBFE" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="12" font-weight="700">
+    <text x="71" y="15" text-anchor="middle" dominant-baseline="middle" fill="#BFDBFE" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="12" font-weight="700">
       Ops Workflows
     </text>
   </g>
@@ -51,7 +51,7 @@
       Concrete Domain
     </text>
     <text x="18" y="49" fill="#CBD5E1" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="12" font-weight="500">
-      Trading-adjacent systems
+      trading-adjacent systems
     </text>
   </g>
 
@@ -62,7 +62,7 @@
       Engineering Focus
     </text>
     <text x="18" y="49" fill="#CBD5E1" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="12" font-weight="500">
-      Infrastructure · reliability
+      infrastructure · reliability
     </text>
   </g>
 
@@ -73,7 +73,7 @@
       Boundary
     </text>
     <text x="18" y="49" fill="#CBD5E1" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="12" font-weight="500">
-      No trading performance claim
+      no trading performance claim
     </text>
   </g>
 </svg>

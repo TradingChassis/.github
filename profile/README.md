@@ -9,8 +9,8 @@ It uses trading as a domain to learn SRE, observability, reproducibility, operat
 
 <p align="center">
   <img
-    src="../assets/tradingchassis-overview.svg"
-    alt="TradingChassis overview: applied infrastructure and reliability lab for trading-adjacent systems"
+    src="../assets/active-project-map.svg"
+    alt="Active project map: run operations, observability, runtime safety, infrastructure, and documentation"
     width="760"
   />
 </p>
@@ -56,20 +56,6 @@ The goal is to demonstrate infrastructure and reliability engineering discipline
 <img src="https://img.spacergif.org/spacer.gif" width="1" height="16"/>
 
 
-## Active Project Map
-
-<p align="center">
-  <img
-    src="../assets/active-project-map.svg"
-    alt="Active project map: run operations, observability, runtime safety, infrastructure, and documentation"
-    width="760"
-  />
-</p>
-
-
-<img src="https://img.spacergif.org/spacer.gif" width="1" height="16"/>
-
-
 ## Archived Work
 
 Earlier repositories explored a custom trading-engine architecture.  
@@ -90,7 +76,7 @@ That direction is preserved as historical context and is no longer the active im
 TradingChassis is intentionally scoped as a portfolio-style engineering lab.  
 It is not a trading bot, strategy library, alpha research project, or claim of trading performance.
 
-The focus is infrastructure discipline: reproducibility, observability, operational clarity, safety boundaries, and failure-aware workflows.  
+The focus is infrastructure discipline: reproducibility, observability, operational clarity, safety boundaries, and failure-aware workflows.
 For technical details, use the individual repository READMEs, documentation, issues, and discussions.
 
 <div align="left">

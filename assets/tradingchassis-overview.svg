@@ -3,15 +3,15 @@
   <rect x="1" y="1" width="758" height="258" rx="21" stroke="#1E293B" stroke-width="1"/>
 
   <!-- Header -->
-  <text x="40" y="48" fill="#F8FAFC" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="24" font-weight="800">
+  <text x="34" y="48" fill="#F8FAFC" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="24" font-weight="800">
     TradingChassis
   </text>
-  <text x="40" y="76" fill="#94A3B8" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="14" font-weight="500">
+  <text x="34" y="76" fill="#94A3B8" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="14" font-weight="500">
     Applied infrastructure and reliability lab for trading-adjacent systems.
   </text>
 
   <!-- Badge row -->
-  <g transform="translate(40, 100)">
+  <g transform="translate(34, 100)">
     <rect width="158" height="30" rx="15" fill="#111827"/>
     <rect x="1" y="1" width="156" height="28" rx="14" stroke="#2563EB" stroke-opacity="0.5"/>
     <text x="18" y="20" fill="#BFDBFE" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="12" font-weight="700">
@@ -19,7 +19,7 @@
     </text>
   </g>
 
-  <g transform="translate(212, 100)">
+  <g transform="translate(206, 100)">
     <rect width="150" height="30" rx="15" fill="#111827"/>
     <rect x="1" y="1" width="148" height="28" rx="14" stroke="#2563EB" stroke-opacity="0.5"/>
     <text x="18" y="20" fill="#BFDBFE" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="12" font-weight="700">
@@ -27,7 +27,7 @@
     </text>
   </g>
 
-  <g transform="translate(376, 100)">
+  <g transform="translate(370, 100)">
     <rect width="156" height="30" rx="15" fill="#111827"/>
     <rect x="1" y="1" width="154" height="28" rx="14" stroke="#2563EB" stroke-opacity="0.5"/>
     <text x="18" y="20" fill="#BFDBFE" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="12" font-weight="700">
@@ -35,7 +35,7 @@
     </text>
   </g>
 
-  <g transform="translate(546, 100)">
+  <g transform="translate(540, 100)">
     <rect width="142" height="30" rx="15" fill="#111827"/>
     <rect x="1" y="1" width="140" height="28" rx="14" stroke="#2563EB" stroke-opacity="0.5"/>
     <text x="18" y="20" fill="#BFDBFE" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="12" font-weight="700">
@@ -44,9 +44,9 @@
   </g>
 
   <!-- Main cards -->
-  <g transform="translate(40, 155)">
-    <rect width="210" height="70" rx="14" fill="#111827"/>
-    <rect x="1" y="1" width="208" height="68" rx="13" stroke="#1E293B" stroke-width="1"/>
+  <g transform="translate(34, 155)">
+    <rect width="214" height="70" rx="14" fill="#111827"/>
+    <rect x="1" y="1" width="212" height="68" rx="13" stroke="#1E293B" stroke-width="1"/>
     <text x="18" y="27" fill="#58A6FF" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="13" font-weight="800">
       Concrete Domain
     </text>
@@ -55,9 +55,9 @@
     </text>
   </g>
 
-  <g transform="translate(275, 155)">
-    <rect width="210" height="70" rx="14" fill="#111827"/>
-    <rect x="1" y="1" width="208" height="68" rx="13" stroke="#1E293B" stroke-width="1"/>
+  <g transform="translate(273, 155)">
+    <rect width="214" height="70" rx="14" fill="#111827"/>
+    <rect x="1" y="1" width="212" height="68" rx="13" stroke="#1E293B" stroke-width="1"/>
     <text x="18" y="27" fill="#58A6FF" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="13" font-weight="800">
       Engineering Focus
     </text>
@@ -66,9 +66,9 @@
     </text>
   </g>
 
-  <g transform="translate(510, 155)">
-    <rect width="210" height="70" rx="14" fill="#111827"/>
-    <rect x="1" y="1" width="208" height="68" rx="13" stroke="#1E293B" stroke-width="1"/>
+  <g transform="translate(512, 155)">
+    <rect width="214" height="70" rx="14" fill="#111827"/>
+    <rect x="1" y="1" width="212" height="68" rx="13" stroke="#1E293B" stroke-width="1"/>
     <text x="18" y="27" fill="#58A6FF" font-family="Inter, Segoe UI, Arial, sans-serif" font-size="13" font-weight="800">
       Boundary
     </text>

@@ -1,4 +1,4 @@
-<div align="center">
+<div align="left">
 
 TradingChassis is an applied infrastructure and reliability lab for trading-adjacent systems.  
 It uses trading as a domain to learn SRE, observability, reproducibility,  

@@ -1,7 +1,7 @@
-<div align="center">
+<div align="left">
 
 TradingChassis is an applied infrastructure and reliability lab for trading-adjacent systems.  
-It uses trading as a domain to learn SRE, observability, reproducibility,  
+It uses trading as a domain to learn SRE, observability, reproducibility,
 operational workflows, and failure-aware infrastructure design.
 
 The current direction is focused on **small, understandable proof-of-skill systems**.  
@@ -24,6 +24,7 @@ The goal is to demonstrate infrastructure and reliability engineering discipline
 <img src="https://img.shields.io/badge/Failure--Aware-System%20Design-7C3AED?style=for-the-badge" />
 
 
+<br/>
 <br/>
 <br/>
 

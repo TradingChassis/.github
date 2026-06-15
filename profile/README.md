@@ -29,7 +29,6 @@ The emphasis is on infrastructure engineering: reproducible environments, observ
 
 <br/>
 <br/>
-<br/>
 
 
 ## Active Work

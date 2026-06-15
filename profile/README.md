@@ -14,23 +14,6 @@ The emphasis is on infrastructure engineering: reproducible environments, observ
 <br/>
 
 
-<img src="https://img.shields.io/badge/Reproducible-Run%20Workflows-0F172A?style=for-the-badge" />
-<img src="https://img.shields.io/badge/Observable-Metrics%20%2B%20Reports-2563EB?style=for-the-badge" />
-<img src="https://img.shields.io/badge/Local--First-Operational%20Tooling-334155?style=for-the-badge" />
-
-
-<br/>
-
-
-<img src="https://img.shields.io/badge/Runtime-Safety%20Boundaries-0F766E?style=for-the-badge" />
-<img src="https://img.shields.io/badge/Infrastructure-Kubernetes%20%2B%20GitOps-326CE5?style=for-the-badge&logo=kubernetes&logoColor=white" />
-<img src="https://img.shields.io/badge/Failure--Aware-System%20Design-7C3AED?style=for-the-badge" />
-
-
-<br/>
-<br/>
-
-
 ## Active Work
 
 | Repository | Status | Role |

@@ -4,8 +4,8 @@ TradingChassis is an applied infrastructure and reliability lab for trading-adja
 It uses trading as a domain to learn SRE, observability, reproducibility,
 operational workflows, and failure-aware infrastructure design.
 
-The current direction is focused on **small, understandable proof-of-skill systems**.  
-The goal is to demonstrate infrastructure and reliability engineering discipline in a concrete domain.
+The focus is on **small, understandable proof-of-skill systems**
+to demonstrate infrastructure and reliability engineering discipline in a concrete domain.
 
 
 <br/>
@@ -62,7 +62,7 @@ TradingChassis is intentionally scoped as a portfolio-style engineering lab.
 It is not a trading bot, strategy library, alpha research project, or claim of trading performance.
 
 The focus is infrastructure discipline: reproducibility, observability, operational clarity, safety boundaries, and failure-aware workflows.
-For technical details, use the individual repository READMEs, documentation, issues, and discussions.
+Technical details are described in the individual repository READMEs and documentations.
 
 
 <br/>
@@ -70,7 +70,7 @@ For technical details, use the individual repository READMEs, documentation, iss
 
 ## Contributing and Contact
 
-Contributions, feedback, and technical discussion are welcome around infrastructure, reliability engineering, observability, reproducibility, operational workflows, and trading-adjacent systems.
+Contributions, feedback, and technical discussion are welcome around infrastructure, reliability engineering, observability, reproducibility and operational workflows.
 
 See [CONTRIBUTING.md](https://github.com/TradingChassis/.github/blob/main/CONTRIBUTING.md) for guidance.
 

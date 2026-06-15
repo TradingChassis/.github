@@ -11,9 +11,6 @@ It is not a trading bot, strategy framework, alpha research platform, or claim o
 The emphasis is on infrastructure engineering: reproducible environments, observable systems, clear operational boundaries, safety-conscious design, and workflows that remain understandable under failure.
 
 
-<br/>
-
-
 ## Active Work
 
 | Repository | Status | Role |

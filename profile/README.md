@@ -1,11 +1,14 @@
 <div align="left">
 
-TradingChassis is an applied infrastructure and reliability lab for trading-adjacent systems.  
-It uses trading as a domain to learn SRE, observability, reproducibility,
-operational workflows, and failure-aware infrastructure design.
+TradingChassis is an applied engineering lab focused on infrastructure, reliability, and operational discipline.
 
-The focus is on **small, understandable proof-of-skill systems**
-to demonstrate infrastructure and reliability engineering discipline in a concrete domain.
+The project uses trading as a demanding technical domain to demonstrate practical skills in SRE, observability, reproducibility, workflow design, and failure-aware infrastructure.
+
+TradingChassis is intentionally designed as a portfolio project. It consists of small, understandable proof-of-skill systems.
+
+It is not a trading bot, strategy framework, alpha research platform, or claim of financial performance.
+
+The emphasis is on infrastructure engineering: reproducible environments, observable systems, clear operational boundaries, safety-conscious design, and workflows that remain understandable under failure.
 
 
 <br/>
@@ -51,18 +54,6 @@ That direction is preserved as historical context and is no longer the active im
 | [`core`](https://github.com/TradingChassis/core) | Archived / Legacy | Historical exploration of deterministic event-driven trading decision semantics. |
 | [`core-runtime`](https://github.com/TradingChassis/core-runtime) | Archived / Legacy | Historical runtime and orchestration layer for the previous Core architecture. |
 | [`docs`](https://github.com/TradingChassis/docs) | Archived / Legacy | Historical documentation archive for architecture, concepts, ADRs, operations, and project evolution. |
-
-
-<br/>
-
-
-## Boundaries
-
-TradingChassis is intentionally scoped as a portfolio-style engineering lab.  
-It is not a trading bot, strategy library, alpha research project, or claim of trading performance.
-
-The focus is infrastructure discipline: reproducibility, observability, operational clarity, safety boundaries, and failure-aware workflows.
-Technical details are described in the individual repository READMEs and documentations.
 
 
 <br/>

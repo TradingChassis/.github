@@ -16,16 +16,16 @@ The emphasis is on infrastructure engineering: reproducible environments, observ
 | [`infrastructure`](https://github.com/TradingChassis/infrastructure) | Active / Foundation | Kubernetes, GitOps, observability, environment management, and operational infrastructure. |
 | [`infrastructure-secrets`](https://github.com/TradingChassis/infrastructure-secrets) | Supporting | Secret-management integration work for Kubernetes-based infrastructure workflows. |
 
-## Archived Work
+## Legacy Work
 
 Earlier repositories explored a custom trading-engine architecture.  
 That direction is preserved as historical context and is no longer the active implementation path.
 
 | Repository | Status | Notes |
 | --- | --- | --- |
-| [`core`](https://github.com/TradingChassis/core) | Archived / Legacy | Historical exploration of deterministic event-driven trading decision semantics. |
-| [`core-runtime`](https://github.com/TradingChassis/core-runtime) | Archived / Legacy | Historical runtime and orchestration layer for the previous Core architecture. |
-| [`docs`](https://github.com/TradingChassis/docs) | Archived / Legacy | Historical documentation archive for architecture, concepts, ADRs, operations, and project evolution. |
+| [`core`](https://github.com/TradingChassis/core) | Legacy | Historical exploration of deterministic event-driven trading decision semantics. |
+| [`core-runtime`](https://github.com/TradingChassis/core-runtime) | Legacy | Historical runtime and orchestration layer for the previous Core architecture. |
+| [`docs`](https://github.com/TradingChassis/docs) | Legacy | Historical documentation archive for architecture, concepts, ADRs, operations, and project evolution. |
 
 ## Contributing and Contact
 

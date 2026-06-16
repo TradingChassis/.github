@@ -8,9 +8,6 @@ It is not a trading bot, strategy framework, alpha research platform, or claim o
 
 The emphasis is on infrastructure engineering: reproducible environments, observable systems, clear operational boundaries, safety-conscious design, and workflows that remain understandable under failure.
 
-Earlier repositories explored a custom trading-engine architecture.  
-That direction is preserved as historical context and is no longer the active implementation path.
-
 | Repository | Status | Role |
 | --- | --- | --- |
 | [`tradingchassis-ops-lab`](https://github.com/TradingChassis/tradingchassis-ops-lab) | Active / Primary | Local-first operations lab around NautilusTrader for reproducible backtest and paper-run workflows. |
@@ -19,6 +16,9 @@ That direction is preserved as historical context and is no longer the active im
 | [`core`](https://github.com/TradingChassis/core) | Legacy | Historical exploration of deterministic event-driven trading decision semantics. |
 | [`core-runtime`](https://github.com/TradingChassis/core-runtime) | Legacy | Historical runtime and orchestration layer for the previous Core architecture. |
 | [`docs`](https://github.com/TradingChassis/docs) | Legacy | Historical documentation archive for architecture, concepts, ADRs, operations, and project evolution. |
+
+Earlier repositories explored a custom trading-engine architecture.  
+That direction is preserved as historical context and is no longer part of the active implementation path.
 
 ## Contributing and Contact
 

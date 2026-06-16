@@ -29,7 +29,7 @@ That direction is preserved as historical context and is no longer the active im
 
 ## Contributing and Contact
 
-Contributions, feedback, and technical discussion are welcome around infrastructure, reliability engineering, observability, reproducibility and operational workflows.
+Contributions, feedback, and technical discussion are welcome around infrastructure, reliability engineering, observability, reproducibility, and operational workflows.
 
 See [CONTRIBUTING.md](https://github.com/TradingChassis/.github/blob/main/CONTRIBUTING.md) for guidance.
 

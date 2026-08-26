@@ -1,20 +1,65 @@
-TradingChassis is an applied engineering lab focused on infrastructure, reliability, and operational discipline.
+# TradingChassis
 
-The project uses trading as a demanding technical domain to demonstrate practical skills.
+TradingChassis is an applied engineering portfolio focused on **infrastructure, reliability, and operational discipline**.
 
-TradingChassis is intentionally designed as a portfolio project. It consists of small, understandable systems.
+Trading is used as a demanding technical domain to demonstrate practical software, platform, and operations engineering skills.
 
-It is not a trading bot, strategy framework, alpha research platform, or claim of financial performance.
+It is **not** a trading bot, alpha research platform, or claim of financial performance.
 
-Earlier repositories explored custom backtesting infrastructure, trading-engine architecture, its runtime environments and documentation.
+## Repository Map
 
-That direction is preserved as historical context and is no longer part of the active implementation path.
+```text
+TradingChassis
+│
+├── Trading System Architecture
+│
+│   core
+│   └── deterministic domain and decision logic
+│        │
+│        ▼
+│   core-runtime
+│   └── execution and runtime environment
+│        │
+│        ▼
+│   infrastructure
+│   └── deployment, platform and operations
+│        │
+│        └── oci-secrets-store-csi-driver-provider
+│            └── Kubernetes ↔ OCI Vault secrets integration
+│
+│   docs
+│   └── architecture, concepts and design decisions
+│
+└── tradingchassis-ops-lab
+    └── standalone operations and reliability lab
+        built around NautilusTrader
+```
 
-| Repository | Status | Role |
-| --- | --- | --- |
-| [`tradingchassis-ops-lab`](https://github.com/TradingChassis/tradingchassis-ops-lab) | Active | Local-first operations lab around NautilusTrader for reproducible backtest and paper-run workflows. |
-| [`infrastructure`](https://github.com/TradingChassis/infrastructure) | Active | Kubernetes, GitOps, observability, environment management, and operational infrastructure. |
-| [`oci-secrets-store-csi-driver-provider`](https://github.com/TradingChassis/oci-secrets-store-csi-driver-provider) | Supporting | Secret-management integration work for Kubernetes-based infrastructure workflows. |
-| [`core`](https://github.com/TradingChassis/core) | Demo | Deterministic event-driven trading decision semantics. |
-| [`core-runtime`](https://github.com/TradingChassis/core-runtime) | Demo | Runtime and orchestration layer for core. |
-| [`docs`](https://github.com/TradingChassis/docs) | Archived | Archived documentation for architecture, concepts, ADRs, operations, and project evolution. |
+The repositories in the **Trading System Architecture** represent different layers of one larger system.
+
+`core` contains the deterministic trading-domain logic. `core-runtime` provides the environment in which that logic can be executed. `infrastructure` provides the Kubernetes, GitOps, observability, storage, and cloud platform around those workloads. The OCI Secrets Store CSI provider supports that infrastructure by integrating Kubernetes workloads with OCI Vault.
+
+`docs` preserves the architecture, terminology, concepts, ADRs, and design decisions behind that system.
+
+The custom trading-engine direction represented by `core`, `core-runtime`, and the archived documentation is retained as **architectural exploration and engineering evidence**, rather than the active implementation direction.
+
+## Operations Lab
+
+[`tradingchassis-ops-lab`](https://github.com/TradingChassis/tradingchassis-ops-lab) is intentionally separate from the custom trading-engine architecture.
+
+It is a local-first operations and reliability lab built around **NautilusTrader**, focusing on reproducible workflows, artifacts, observability, reconciliation, failure handling, and operational controls rather than strategy performance.
+
+## Repositories
+
+| Repository                                                                                                         | Status         | Role                                                                         |
+| ------------------------------------------------------------------------------------------------------------------ | -------------- | ---------------------------------------------------------------------------- |
+| [`tradingchassis-ops-lab`](https://github.com/TradingChassis/tradingchassis-ops-lab)                               | **Active**     | Standalone operations and reliability lab around NautilusTrader              |
+| [`infrastructure`](https://github.com/TradingChassis/infrastructure)                                               | **Active**     | OCI, Kubernetes, GitOps, observability, storage, and platform infrastructure |
+| [`oci-secrets-store-csi-driver-provider`](https://github.com/TradingChassis/oci-secrets-store-csi-driver-provider) | **Supporting** | Kubernetes integration for retrieving secrets from OCI Vault                 |
+| [`core`](https://github.com/TradingChassis/core)                                                                   | **Demo**       | Deterministic event-driven trading-domain and decision semantics             |
+| [`core-runtime`](https://github.com/TradingChassis/core-runtime)                                                   | **Demo**       | Runtime and orchestration layer around Core                                  |
+| [`docs`](https://github.com/TradingChassis/docs)                                                                   | **Archived**   | Architecture, concepts, ADRs, operations, and project evolution              |
+
+## Legacy
+
+[`infrastructure-secrets`](https://github.com/TradingChassis/infrastructure-secrets) is an archived predecessor of the current OCI Secrets Store CSI provider fork and is retained for historical context.

@@ -51,12 +51,12 @@ It is a local-first operations and reliability lab built around **NautilusTrader
 
 ## Repositories
 
-| Repository | Status | Role |
-| --- | --- | --- |
-| [`tradingchassis-ops-lab`](https://github.com/TradingChassis/tradingchassis-ops-lab) | **Active** | Standalone operations and reliability lab around NautilusTrader |
-| [`infrastructure`](https://github.com/TradingChassis/infrastructure) | **Active** | OCI, Kubernetes, GitOps, observability, storage, and platform infrastructure |
-| [`oci-secrets-store-csi-driver-provider`](https://github.com/TradingChassis/oci-secrets-store-csi-driver-provider) | **Supporting** | Kubernetes integration for retrieving secrets from OCI Vault |
-| [`core`](https://github.com/TradingChassis/core) | **Demo** | Deterministic event-driven trading-domain and decision semantics |
-| [`core-runtime`](https://github.com/TradingChassis/core-runtime) | **Demo** | Runtime and orchestration layer around Core |
-| [`docs`](https://github.com/TradingChassis/docs) | **Archived** | Architecture, concepts, ADRs, operations, and project evolution |
-| [`infrastructure-secrets`](https://github.com/TradingChassis/infrastructure-secrets) | **Archived** | Predecessor of the current OCI Secrets Store CSI provider fork, retained for historical context |
+| Repository | Role |
+| --- | --- |
+| [`tradingchassis-ops-lab`](https://github.com/TradingChassis/tradingchassis-ops-lab) | Standalone operations and reliability lab around NautilusTrader |
+| [`infrastructure`](https://github.com/TradingChassis/infrastructure) | OCI, Kubernetes, GitOps, observability, storage, and platform infrastructure |
+| [`oci-secrets-store-csi-driver-provider`](https://github.com/TradingChassis/oci-secrets-store-csi-driver-provider) | Kubernetes integration for retrieving secrets from OCI Vault |
+| [`core`](https://github.com/TradingChassis/core) | Deterministic event-driven trading-domain and decision semantics |
+| [`core-runtime`](https://github.com/TradingChassis/core-runtime) | Runtime and orchestration layer around Core |
+| [`docs`](https://github.com/TradingChassis/docs) | Architecture, concepts, ADRs, operations, and project evolution |
+| [`infrastructure-secrets`](https://github.com/TradingChassis/infrastructure-secrets) | Predecessor of the current OCI Secrets Store CSI provider fork, retained for historical context |
